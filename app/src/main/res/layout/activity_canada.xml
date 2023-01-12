@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/title_mexico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canada Plates"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/percent_canada"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:gravity="center"
+        android:text="0%"
+        android:textSize="50sp" />
+
+            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".canadaActivity"
+            android:background="#F44336"/>
+
+
+
+</LinearLayout>
