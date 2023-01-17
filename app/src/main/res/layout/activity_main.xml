@@ -20,25 +20,29 @@
         android:id="@+id/us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="United States" />
+        android:text="United States"
+        android:backgroundTint="#03A9F4"/>
 
     <Button
         android:id="@+id/canada"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Canada" />
+        android:text="Canada"
+        android:backgroundTint="#E91E63"/>
 
     <Button
         android:id="@+id/mexico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mexico" />
+        android:text="Mexico"
+        android:backgroundTint="#4CAF50"/>
 
     <Button
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings" />
+        android:text="Settings"
+        android:backgroundTint="#9C27B0"/>
 
     <TextView
         android:id="@+id/percent"

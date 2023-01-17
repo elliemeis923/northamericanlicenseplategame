@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".canadaActivity"
-            android:background="#F44336"/>
+            android:background="#E91E63"/>
 
 
 
