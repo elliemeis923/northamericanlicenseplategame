@@ -1,7 +1,10 @@
 package com.example.northamericanlicenseplategame;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,13 +12,15 @@ import java.util.ArrayList;
 
 public class usActivity extends AppCompatActivity {
 
+    ArrayList<Plate> plates = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_us);
 
         // your code goes here...
-        ArrayList<Plate> plates = new ArrayList<>();
+
         plates.add(new Plate("Alabama", R.drawable.alabama_license));
         plates.add(new Plate("Alaska", R.drawable.alaska_license_thumb));
         plates.add(new Plate("Arizona", R.drawable.arizona_license_thumb));
@@ -72,5 +77,21 @@ public class usActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
 
         listView.setAdapter(adapter);
+
+
     }
+
+    public void countDone(View view) {
+        int count = 0;
+        CheckBox cb = (CheckBox) findViewById(R.id.check_view);
+        for(int i = 0; i < plates.size(); i++) {
+            boolean isChecked = cb.isChecked();
+            if (cb.isChecked()) {
+                count++;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_us);
+            tv.setText(count + "/50");
+        }
+    }
+
 }

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="#5E7876">
 
     <TextView
         android:id="@+id/title_mexico"
@@ -15,6 +16,8 @@
         android:text="Mexico Plates"
         android:textSize="30sp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -22,8 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:gravity="center"
-        android:text="0%"
-        android:textSize="50sp" />
+        android:text="0/32"
+        android:textSize="50sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
 
             <ListView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"

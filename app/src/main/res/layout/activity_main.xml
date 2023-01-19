@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="#5E7876"
+    >
 
     <TextView
         android:id="@+id/title"
@@ -13,7 +15,9 @@
         android:layout_height="wrap_content"
         android:text="North American License Plate Game"
         android:textSize="30sp"
+        android:textColor="#FFFFFF"
         android:gravity="center"
+        android:textStyle="bold"
         />
 
     <Button
@@ -28,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Canada"
-        android:backgroundTint="#E91E63"/>
+        android:backgroundTint="#E8799F"/>
 
     <Button
         android:id="@+id/mexico"
@@ -48,9 +52,11 @@
         android:id="@+id/percent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0%"
+        android:text="0/95"
         android:textSize="50sp"
-        android:gravity="center"/>
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"/>
 
 
 </LinearLayout>
