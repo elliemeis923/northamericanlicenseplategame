@@ -8,16 +8,22 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 
 public class usActivity extends AppCompatActivity {
 
     ArrayList<Plate> plates = new ArrayList<>();
+    ArrayList<Plate> checkPlates = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_us);
+
+        //create gson object for save
+        Gson gson = new Gson();
 
         // your code goes here...
 
@@ -78,20 +84,28 @@ public class usActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
+        //turn object into string
+
 
     }
 
     public void countDone(View view) {
         int count = 0;
-        CheckBox cb = (CheckBox) findViewById(R.id.check_view);
-        for(int i = 0; i < plates.size(); i++) {
-            boolean isChecked = cb.isChecked();
-            if (cb.isChecked()) {
-                count++;
+        CheckBox cb =  findViewById(R.id.check_view);
+        for (int i = 0; i < plates.size(); i++) {
+            boolean checked = cb.isChecked();
+            if (checked) {
+                checkPlates.add(plates.get(i));
             }
+            else{
+                checkPlates.remove(plates.get(i));
+            }
+            count = checkPlates.size();
             TextView tv = (TextView) findViewById(R.id.percent_us);
-            tv.setText(count + "/50");
+            tv.setText(count / 50 + "/50");//why do we have to divide count by 50??????
+
         }
+
     }
 
 }

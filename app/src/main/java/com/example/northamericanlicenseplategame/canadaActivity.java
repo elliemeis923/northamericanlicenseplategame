@@ -14,6 +14,7 @@ public class canadaActivity extends AppCompatActivity {
 
 
     ArrayList<Plate> plates = new ArrayList<>();
+    ArrayList<Plate> checkPlates = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,15 +47,20 @@ public class canadaActivity extends AppCompatActivity {
 
     public void countDone(View view) {
         int count = 0;
-        CheckBox cb = (CheckBox) findViewById(R.id.check_view);
-        boolean isChecked = cb.isChecked();
+        CheckBox cb =  findViewById(R.id.check_view);
         for (int i = 0; i < plates.size(); i++) {
-            if (cb.isChecked()) {
-                count++;
+            boolean checked = cb.isChecked();
+            if (checked) {
+                checkPlates.add(plates.get(i));
             }
+            else{
+                checkPlates.remove(plates.get(i));
+            }
+            count = checkPlates.size();
             TextView tv = (TextView) findViewById(R.id.percent_canada);
-            tv.setText(count + "/13");
-        }
-    }
+            tv.setText(count/13  + "/13");//why do we have to divide count by 32??????
 
+        }
+
+    }
 }
