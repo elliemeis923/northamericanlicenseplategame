@@ -49,7 +49,7 @@
         android:backgroundTint="#9C27B0"/>
 
     <TextView
-        android:id="@+id/percent"
+        android:id="@+id/percent_total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0/95"
