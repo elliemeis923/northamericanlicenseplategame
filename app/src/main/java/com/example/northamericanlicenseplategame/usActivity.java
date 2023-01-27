@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 public class usActivity extends AppCompatActivity {
 
-    ArrayList<Plate> plates = new ArrayList<>();
-    ArrayList<Plate> checkPlates = new ArrayList<>();
+    /*ArrayList<Plate> plates = new ArrayList<>();
+    ArrayList<Plate> checkPlates = new ArrayList<>();*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class usActivity extends AppCompatActivity {
 
         // your code goes here...
 
-        plates.add(new Plate("Alabama", R.drawable.alabama_license));
+       /* plates.add(new Plate("Alabama", R.drawable.alabama_license));
         plates.add(new Plate("Alaska", R.drawable.alaska_license_thumb));
         plates.add(new Plate("Arizona", R.drawable.arizona_license_thumb));
         plates.add(new Plate("Arkansas", R.drawable.arkansas_license_thumb));
@@ -84,10 +84,10 @@ public class usActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
 
         //turn object to string
-        Gson gson = new Gson();
+       /* Gson gson = new Gson();
         String json = gson.toJson(checkPlates);
 
         //turn string back to object
@@ -106,12 +106,12 @@ public class usActivity extends AppCompatActivity {
         TextView percent = findViewById(R.id.percent_us);
         percent.setText(s1);
         CheckBox cb =  findViewById(R.id.check_view);
-        cb.setChecked(e);
+        cb.setChecked(e);*/
 
 
     }
 
-    public void save(View view){
+    /*public void save(View view){
         CheckBox cb =  findViewById(R.id.check_view);
         TextView percent = findViewById(R.id.percent_us);
 
@@ -128,8 +128,8 @@ public class usActivity extends AppCompatActivity {
         // we need to commit to apply those changes made,
         // otherwise, it will throw an error
         myEdit.apply();
-    }
-    public void countDone(View view) {
+    }*/
+    /*public void countDone(View view) {
         int count = 0;
         CheckBox cb =  findViewById(R.id.check_view);
         for (int i = 0; i < plates.size(); i++) {
@@ -146,6 +146,6 @@ public class usActivity extends AppCompatActivity {
 
         }
 
-    }
+    }*/
 
 }

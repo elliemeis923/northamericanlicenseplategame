@@ -30,15 +30,886 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"/>
 
-            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/list"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".mexicoActivity"
-            android:background="#4CAF50"/>
+            tools:context=".canadaActivity"
+            android:background="#4CAF50">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageac"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1295"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_ac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Aquascalientes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countac"
+                        android:layout_toRightOf="@id/imageac"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagebc"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1296"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_bc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Baja California"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countbc"
+                        android:layout_toRightOf="@id/imagebc"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagebcs"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1297"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_bcs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Baja California Sur"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countbcs"
+                        android:layout_toRightOf="@id/imagebcs"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagecampeche"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1298"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_campeche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Campeche"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countcampeche"
+                        android:layout_toRightOf="@id/imagecampeche"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagechiapas"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1299"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_chipas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Chiapas"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countchiapas"
+                        android:layout_toRightOf="@id/imagechiapas"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagechihuahua"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1300"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_chihuahua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Chihuahua"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countchihuahua"
+                        android:layout_toRightOf="@id/imagechihuahua"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagecoahuila"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1301"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_coahuila"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Coahuila"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countcoahuila"
+                        android:layout_toRightOf="@id/imagecoahuila"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagecolima"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1302"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_colima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Colima"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countcolima"
+                        android:layout_toRightOf="@id/imagecolima"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagedurango"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1304"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_durango"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Durango"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countdurango"
+                        android:layout_toRightOf="@id/imagedurango"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageguanajuato"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1306"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_guanajuato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Guanajuato"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countguanajuato"
+                        android:layout_toRightOf="@id/imageguanajuato"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageguerrero"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1307"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_guerrero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Guerrero"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countguerrero"
+                        android:layout_toRightOf="@id/imageguerrero"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagehidalgo"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1308"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_hidalgo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Hidalgo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="counthidalgo"
+                        android:layout_toRightOf="@id/imagehidalgo"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagejalisco"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1309"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_jalisco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Jalisco"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countjalisco"
+                        android:layout_toRightOf="@id/imagejalisco"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagemexico"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1310"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_mexico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Mexico"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countmexico"
+                        android:layout_toRightOf="@id/imagemexico"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagemexicocity"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1303"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_mexicocity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Mexico City"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countmexicocity"
+                        android:layout_toRightOf="@id/imagemexicocity"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagemichoacan"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1311"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_michoacan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Michoacan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countmichoacan"
+                        android:layout_toRightOf="@id/imagemichoacan"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagemorelos"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1312"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_morelos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Morelos"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countmorelos"
+                        android:layout_toRightOf="@id/imagemorelos"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagenayarit"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1313"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_nayarit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Nayarit"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countnayarit"
+                        android:layout_toRightOf="@id/imagenayarit"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagenl"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1314"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_nl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Nueva Leon"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countnl"
+                        android:layout_toRightOf="@id/imagenl"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageoaxaca"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1315"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_oaxaca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Oaxaca"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countoaxaca"
+                        android:layout_toRightOf="@id/imageoaxaca"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagepuebla"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1316"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_puebla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Puebla"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countpuebla"
+                        android:layout_toRightOf="@id/imagepuebla"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagequeretaro"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1317"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_queretaro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Queretaro"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countqueretaro"
+                        android:layout_toRightOf="@id/imagequeretaro"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageqr"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1318"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_qr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Quintana Roo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countqr"
+                        android:layout_toRightOf="@id/imageqr"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageslp"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1319"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_slp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="San Luis Potosi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countslp"
+                        android:layout_toRightOf="@id/imageslp"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagesinaloa"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1320"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_sinaloa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Sinaloa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countsinaloa"
+                        android:layout_toRightOf="@id/imagesinaloa"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagesonora"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1321"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_sonora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Sonora"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countsonora"
+                        android:layout_toRightOf="@id/imagesonora"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagetabasco"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1322"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_tabasco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Tabasco"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="counttabasco"
+                        android:layout_toRightOf="@id/imagetabasco"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagetamaulipas"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1323"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_tamaulipas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Tamaulipas"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="counttamaulipas"
+                        android:layout_toRightOf="@id/imagetamaulipas"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagetlaxcala"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1324"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_tlaxcala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Tlaxcala"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="counttlaxcala"
+                        android:layout_toRightOf="@id/imagetlaxcala"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagevc"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1325"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_vc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Vera Cruz"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countvc"
+                        android:layout_toRightOf="@id/imagevc"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageyucatan"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1326"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_yucatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Yucatan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countyucatan"
+                        android:layout_toRightOf="@id/imageyucatan"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagezacatas"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/img_1327"
+                        android:background="#4CAF50"/>
+
+                    <CheckBox
+                        android:id="@+id/check_zacatas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Zacatecas"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countzacatas"
+                        android:layout_toRightOf="@id/imagezacatas"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
 
 
 </LinearLayout>

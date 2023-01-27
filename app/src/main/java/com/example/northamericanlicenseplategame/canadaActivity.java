@@ -18,8 +18,7 @@ import java.util.ArrayList;
 public class canadaActivity extends AppCompatActivity {
 
 
-    ArrayList<Plate> plates = new ArrayList<>();
-    ArrayList<Plate> checkPlates = new ArrayList<>();
+    public int countCanada = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,85 +26,166 @@ public class canadaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_canada);
 
         // your code goes here...
-        plates.add(new Plate("Alberta", R.drawable.alberta));
-        plates.add(new Plate("British Columbia", R.drawable.british_columbia));
-        plates.add(new Plate("Manitoba", R.drawable.manitoba));
-        plates.add(new Plate("New Brunswick", R.drawable.new_brunswick));
-        plates.add(new Plate("Newfoundland and Labrador", R.drawable.nfl));
-        plates.add(new Plate("Northwest Territories", R.drawable.nt));
-        plates.add(new Plate("Nova Scotia", R.drawable.nova_scotia));
-        plates.add(new Plate("Nunavut", R.drawable.nunavut));
-        plates.add(new Plate("Ontario", R.drawable.ontario));
-        plates.add(new Plate("Prince Edward Island", R.drawable.pei));
-        plates.add(new Plate("Quebec", R.drawable.quebec));
-        plates.add(new Plate("Saskatchewan", R.drawable.saskatchewan));
-        plates.add(new Plate("Yukon", R.drawable.yukon));
 
-        PlateAdapter adapter = new PlateAdapter(this, plates);
 
-        ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(adapter);
-
-        //turn object to string
-        Gson gson = new Gson();
-        String json = gson.toJson(checkPlates);
-
-        //turn string back to object
-        Type checkPlateType = new TypeToken<ArrayList<Plate>>(){}.getType();
-        ArrayList<Plate> plate2 = gson.fromJson(json, checkPlateType);
-
-        // Retrieving the value using its keys the file name
-        // must be same in both saving and retrieving the data
-        SharedPreferences sh = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-
-        // The value will be default as empty string because for
-        // the very first time when the app is opened, there is nothing to show
-        String s1 = sh.getString("percent", "0/13");
-        boolean e = sh.getBoolean("checked", false);
-
-        TextView percent = findViewById(R.id.percent_canada);
-        percent.setText(s1);
-        CheckBox cb =  findViewById(R.id.check_view);
-        cb.setChecked(e);
 
     }
-
-    public void save(View view){
-        CheckBox cb =  findViewById(R.id.check_view);
-        TextView percent = findViewById(R.id.percent_canada);
-
-        SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-
-        // Creating an Editor object to edit(write to the file)
-        SharedPreferences.Editor myEdit = sharedPreferences.edit();
-
-        // Storing the key and its value as the data fetched from edittext
-        myEdit.putString("percent", percent.getText().toString());
-        myEdit.putBoolean("checked", cb.isChecked());
-
-        // Once the changes have been made,
-        // we need to commit to apply those changes made,
-        // otherwise, it will throw an error
-        myEdit.apply();
-    }
-
-    public void countDone(View view) {
-        int count = 0;
-        CheckBox cb =  findViewById(R.id.check_view);
-        for (int i = 0; i < plates.size(); i++) {
+        public void countalberta(View view){
+            CheckBox cb =  findViewById(R.id.check_alberta);
             boolean checked = cb.isChecked();
-            if (checked) {
-                checkPlates.add(plates.get(i));
+            if(checked){
+                countCanada++;
             }
             else{
-                checkPlates.remove(plates.get(i));
+                countCanada--;
             }
-            count = checkPlates.size();
             TextView tv = (TextView) findViewById(R.id.percent_canada);
-            tv.setText(count/13  + "/13");//why do we have to divide count by 32??????
-
+            tv.setText(countCanada +"/13");
+        }
+        public void countbc(View view){
+            CheckBox cb =  findViewById(R.id.check_bc);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countmanitoba(View view){
+            CheckBox cb =  findViewById(R.id.check_manitoba);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countnb(View view){
+            CheckBox cb =  findViewById(R.id.check_nb);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countnfl(View view){
+            CheckBox cb =  findViewById(R.id.check_nfl);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countnt(View view){
+            CheckBox cb =  findViewById(R.id.check_nt);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countns(View view){
+            CheckBox cb =  findViewById(R.id.check_ns);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countnunavut(View view){
+            CheckBox cb =  findViewById(R.id.check_nunavut);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countontario(View view){
+            CheckBox cb =  findViewById(R.id.check_ontario);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countpei(View view){
+            CheckBox cb =  findViewById(R.id.check_pei);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countquebec(View view){
+            CheckBox cb =  findViewById(R.id.check_quebec);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countsaska(View view){
+            CheckBox cb =  findViewById(R.id.check_saska);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+        }
+        public void countyukon(View view){
+            CheckBox cb =  findViewById(R.id.check_yukon);
+            boolean checked = cb.isChecked();
+            if(checked){
+                countCanada++;
+            }
+            else{
+                countCanada--;
+            }
+            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
         }
 
-    }
 }

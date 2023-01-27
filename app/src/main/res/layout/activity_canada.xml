@@ -30,14 +30,382 @@
         android:textSize="50sp"
         android:textStyle="bold"/>
 
-            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/list"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".canadaActivity"
-            android:background="#E8799F"/>
+            android:background="#E8799F">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:src="@drawable/alberta"
+                        android:background="#E8799F"/>
+
+                    <CheckBox
+                        android:id="@+id/check_alberta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="88dp"
+                        tools:text="Alberta"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:onClick="countalberta"
+                        android:layout_toRightOf="@id/image"
+                        android:gravity="center"
+                        />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagebc"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/british_columbia"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="British Columbia"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countbc"
+                            android:layout_toRightOf="@id/imagebc"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagemanitoba"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/manitoba"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_manitoba"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Manitoba"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countmanitoba"
+                            android:layout_toRightOf="@id/imagemanitoba"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagenb"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/new_brunswick"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_nb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="New Brunswick"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countnb"
+                            android:layout_toRightOf="@id/imagenb"
+                            android:gravity="center"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagenfl"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/nfl"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_nfl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Newfoundland and Labrador"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countnfl"
+                            android:layout_toRightOf="@id/imagenfl"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagent"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/nt"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_nt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Northwest Territories"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countnt"
+                            android:layout_toRightOf="@id/imagent"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagens"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/alberta"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_ns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Nova Scotia"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countns"
+                            android:layout_toRightOf="@id/imagens"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagenunavut"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/nunavut"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_nunavut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Nunavut"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countnunavut"
+                            android:layout_toRightOf="@id/imagenunavut"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageontario"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/ontario"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_ontario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Ontario"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countontario"
+                            android:layout_toRightOf="@id/imageontario"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagepei"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/pei"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_pei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Prince Edward Island"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countpei"
+                            android:layout_toRightOf="@id/imagepei"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagequebec"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/quebec"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_quebec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Quebec"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countquebec"
+                            android:layout_toRightOf="@id/imagequebec"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagesaska"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/saskatchewan"
+                            android:background="#E8799F"/>
+
+                        <CheckBox
+                            android:id="@+id/check_saska"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Saskatchewan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countsaska"
+                            android:layout_toRightOf="@id/imagesaska"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageyukon"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:src="@drawable/yukon"
+                            android:background="#3F51B5"/>
+
+                        <CheckBox
+                            android:id="@+id/check_yukon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="88dp"
+                            tools:text="Yukon"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:onClick="countyukon"
+                            android:layout_toRightOf="@id/imageyukon"
+
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+
+
 
 
 

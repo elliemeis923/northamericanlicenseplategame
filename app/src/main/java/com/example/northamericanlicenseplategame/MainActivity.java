@@ -18,12 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences sh = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-
-        String s1 = sh.getString("percent_total", "0/95");
-
-        TextView percent = findViewById(R.id.percent_total);
-        percent.setText(s1);
 
         Button us = (Button) findViewById(R.id.us);
 
@@ -71,22 +65,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public void save(View view) {
-
-
-        SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-
-        TextView percent = findViewById(R.id.percent_us);
-
-        // Creating an Editor object to edit(write to the file)
-        SharedPreferences.Editor myEdit = sharedPreferences.edit();
-
-        // Storing the key and its value as the data fetched from edittext
-        myEdit.putString("percent", percent.getText().toString());
-
-        // Once the changes have been made,
-        // we need to commit to apply those changes made,
-        // otherwise, it will throw an error
-        myEdit.apply();
-    }
 }
+
