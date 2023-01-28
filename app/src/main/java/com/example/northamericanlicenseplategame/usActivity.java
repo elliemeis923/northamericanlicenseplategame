@@ -1,151 +1,629 @@
 package com.example.northamericanlicenseplategame;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-
 public class usActivity extends AppCompatActivity {
 
-    /*ArrayList<Plate> plates = new ArrayList<>();
-    ArrayList<Plate> checkPlates = new ArrayList<>();*/
+    public int countUs = 0;
+
+    public int getCountUs() {
+        return countUs;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_us);
 
-
-
         // your code goes here...
 
-       /* plates.add(new Plate("Alabama", R.drawable.alabama_license));
-        plates.add(new Plate("Alaska", R.drawable.alaska_license_thumb));
-        plates.add(new Plate("Arizona", R.drawable.arizona_license_thumb));
-        plates.add(new Plate("Arkansas", R.drawable.arkansas_license_thumb));
-        plates.add(new Plate("California", R.drawable.california_license_thumb));
-        plates.add(new Plate("Colorado", R.drawable.colorado_license_thumb));
-        plates.add(new Plate("Connecticut", R.drawable.connecticut_license_thumb));
-        plates.add(new Plate("Delaware", R.drawable.delaware_license_thumb));
-        plates.add(new Plate("Florida", R.drawable.florida_license_thumb));
-        plates.add(new Plate("Georgia", R.drawable.georgia_license_thumb));
-        plates.add(new Plate("Hawaii", R.drawable.hawaii_license_thumb));
-        plates.add(new Plate("Idaho", R.drawable.idaho_license_thumb));
-        plates.add(new Plate("Illinois", R.drawable.illinois_license_thumb));
-        plates.add(new Plate("Indiana", R.drawable.indiana_license_thumb));
-        plates.add(new Plate("Iowa", R.drawable.iowa_license_thumb));
-        plates.add(new Plate("Kansas", R.drawable.kansas_license_thumb));
-        plates.add(new Plate("Kentucky", R.drawable.kentucky_license_thumb));
-        plates.add(new Plate("Louisiana", R.drawable.louisiana_license_thumb));
-        plates.add(new Plate("Maine", R.drawable.maine_license_thumb));
-        plates.add(new Plate("Maryland", R.drawable.maryland_license_thumb));
-        plates.add(new Plate("Massachusetts", R.drawable.massachusetts_license_thumb));
-        plates.add(new Plate("Michigan", R.drawable.michigan_license_thumb));
-        plates.add(new Plate("Minnesota", R.drawable.minnesota_license_thumb));
-        plates.add(new Plate("Mississippi", R.drawable.mississippi_license_thumb));
-        plates.add(new Plate("Missouri", R.drawable.missouri_license_thumb));
-        plates.add(new Plate("Montana", R.drawable.montana_license_thumb));
-        plates.add(new Plate("Nebraska", R.drawable.nebraska_license_thumb));
-        plates.add(new Plate("Nevada", R.drawable.nevada_license_thumb));
-        plates.add(new Plate("New Hampshire", R.drawable.newhampshire_license_thumb));
-        plates.add(new Plate("New Jersey", R.drawable.newjersey_license_thumb));
-        plates.add(new Plate("New Mexico", R.drawable.newmexico_license_thumb));
-        plates.add(new Plate("New York", R.drawable.newyork_license_thumb));
-        plates.add(new Plate("North Carolina", R.drawable.northcarolina_license_thumb));
-        plates.add(new Plate("North Dakota", R.drawable.northdakota_license_thumb));
-        plates.add(new Plate("Ohio", R.drawable.ohio_license_thumb));
-        plates.add(new Plate("Oklahoma", R.drawable.oklahoma_license_thumb));
-        plates.add(new Plate("Oregon", R.drawable.oregon_license_thumb));
-        plates.add(new Plate("Pennsylvania", R.drawable.pennsylvania_license_thumb));
-        plates.add(new Plate("Rhode Island", R.drawable.rhodeisland_license_thumb));
-        plates.add(new Plate("South Carolina", R.drawable.southcarolina_license_thumb));
-        plates.add(new Plate("South Dakota", R.drawable.southdakota_license_thumb));
-        plates.add(new Plate("Tennessee", R.drawable.tennessee_license_thumb));
-        plates.add(new Plate("Texas", R.drawable.texas_license_thumb));
-        plates.add(new Plate("Utah", R.drawable.utah_license_thumb));
-        plates.add(new Plate("Vermont", R.drawable.vermont_license_thumb));
-        plates.add(new Plate("Virginia", R.drawable.virginia_license_thumb));
-        plates.add(new Plate("Washington", R.drawable.washington_license_thumb));
-        plates.add(new Plate("West Virginia", R.drawable.westvirginia_license_thumb));
-        plates.add(new Plate("Wisconsin", R.drawable.wisconsin_license_thumb));
-        plates.add(new Plate("Wyoming", R.drawable.wyoming_license_thumb));
-
-        PlateAdapter adapter = new PlateAdapter(this, plates);
-
-        ListView listView = (ListView) findViewById(R.id.list);
-
-        listView.setAdapter(adapter);*/
-
-        //turn object to string
-       /* Gson gson = new Gson();
-        String json = gson.toJson(checkPlates);
-
-        //turn string back to object
-        Type checkPlateType = new TypeToken<ArrayList<Plate>>(){}.getType();
-        ArrayList<Plate> plate2 = gson.fromJson(json, checkPlateType);
-
-        // Retrieving the value using its keys the file name
-        // must be same in both saving and retrieving the data
-        SharedPreferences sh = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-
-        // The value will be default as empty string because for
-        // the very first time when the app is opened, there is nothing to show
-        String s1 = sh.getString("percent", "0/50");
-        boolean e = sh.getBoolean("checked", false);
-
-        TextView percent = findViewById(R.id.percent_us);
-        percent.setText(s1);
-        CheckBox cb =  findViewById(R.id.check_view);
-        cb.setChecked(e);*/
-
-
+    }
+    public void countalabama(View view){
+        CheckBox cb =  findViewById(R.id.check_alabama);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
     }
 
-    /*public void save(View view){
-        CheckBox cb =  findViewById(R.id.check_view);
-        TextView percent = findViewById(R.id.percent_us);
-
-        SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-
-        // Creating an Editor object to edit(write to the file)
-        SharedPreferences.Editor myEdit = sharedPreferences.edit();
-
-        // Storing the key and its value as the data fetched from edittext
-        myEdit.putString("percent", percent.getText().toString());
-        myEdit.putBoolean("checked", cb.isChecked());
-
-        // Once the changes have been made,
-        // we need to commit to apply those changes made,
-        // otherwise, it will throw an error
-        myEdit.apply();
-    }*/
-    /*public void countDone(View view) {
-        int count = 0;
-        CheckBox cb =  findViewById(R.id.check_view);
-        for (int i = 0; i < plates.size(); i++) {
-            boolean checked = cb.isChecked();
-            if (checked) {
-                checkPlates.add(plates.get(i));
-            }
-            else{
-                checkPlates.remove(plates.get(i));
-            }
-            count = checkPlates.size();
-            TextView tv = (TextView) findViewById(R.id.percent_us);
-            tv.setText(count / 50 + "/50");//why do we have to divide count by 50??????
-
+    public void countalaska(View view){
+        CheckBox cb =  findViewById(R.id.check_alaska);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
         }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countarizona(View view){
+        CheckBox cb =  findViewById(R.id.check_arizona);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countarkansas(View view){
+        CheckBox cb =  findViewById(R.id.check_arkansas);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countcalifornia(View view){
+        CheckBox cb =  findViewById(R.id.check_california);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countcolorado(View view){
+        CheckBox cb =  findViewById(R.id.check_colorado);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countconnecticut(View view){
+        CheckBox cb =  findViewById(R.id.check_connecticut);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countdelaware(View view){
+        CheckBox cb =  findViewById(R.id.check_delaware);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countflorida(View view){
+        CheckBox cb =  findViewById(R.id.check_florida);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countgeorgia(View view){
+        CheckBox cb =  findViewById(R.id.check_georgia);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void counthawaii(View view){
+        CheckBox cb =  findViewById(R.id.check_hawaii);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countidaho(View view){
+        CheckBox cb =  findViewById(R.id.check_idaho);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countillinois(View view){
+        CheckBox cb =  findViewById(R.id.check_illinois);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countindiana(View view){
+        CheckBox cb =  findViewById(R.id.check_indiana);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countiowa(View view){
+        CheckBox cb =  findViewById(R.id.check_iowa);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countkansas(View view){
+        CheckBox cb =  findViewById(R.id.check_kansas);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countkentucky(View view){
+        CheckBox cb =  findViewById(R.id.check_kentucky);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countlouisiana(View view){
+        CheckBox cb =  findViewById(R.id.check_louisiana);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmaine(View view){
+        CheckBox cb =  findViewById(R.id.check_maine);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmaryland(View view){
+        CheckBox cb =  findViewById(R.id.check_maryland);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmass(View view){
+        CheckBox cb =  findViewById(R.id.check_mass);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmichigan(View view){
+        CheckBox cb =  findViewById(R.id.check_michigan);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countminnesota(View view){
+        CheckBox cb =  findViewById(R.id.check_minnesota);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmississippi(View view){
+        CheckBox cb =  findViewById(R.id.check_mississippi);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmissouri(View view){
+        CheckBox cb =  findViewById(R.id.check_missouri);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countmontana(View view){
+        CheckBox cb =  findViewById(R.id.check_montana);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnebraska(View view){
+        CheckBox cb =  findViewById(R.id.check_nebraska);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnevada(View view){
+        CheckBox cb =  findViewById(R.id.check_nevada);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnh(View view){
+        CheckBox cb =  findViewById(R.id.check_nh);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnj(View view){
+        CheckBox cb =  findViewById(R.id.check_nj);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnm(View view){
+        CheckBox cb =  findViewById(R.id.check_nm);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countny(View view){
+        CheckBox cb =  findViewById(R.id.check_ny);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnc(View view){
+        CheckBox cb =  findViewById(R.id.check_nc);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countnd(View view){
+        CheckBox cb =  findViewById(R.id.check_nd);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countohio(View view){
+        CheckBox cb =  findViewById(R.id.check_ohio);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countok(View view){
+        CheckBox cb =  findViewById(R.id.check_ok);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countor(View view){
+        CheckBox cb =  findViewById(R.id.check_or);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countpenn(View view){
+        CheckBox cb =  findViewById(R.id.check_penn);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countri(View view){
+        CheckBox cb =  findViewById(R.id.check_ri);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countsc(View view){
+        CheckBox cb =  findViewById(R.id.check_sc);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countsd(View view){
+        CheckBox cb =  findViewById(R.id.check_sd);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void counttenn(View view){
+        CheckBox cb =  findViewById(R.id.check_tenn);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void counttx(View view){
+        CheckBox cb =  findViewById(R.id.check_tx);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countutah(View view){
+        CheckBox cb =  findViewById(R.id.check_utah);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countvermont(View view){
+        CheckBox cb =  findViewById(R.id.check_vermont);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countvirginia(View view){
+        CheckBox cb =  findViewById(R.id.check_virginia);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countwash(View view){
+        CheckBox cb =  findViewById(R.id.check_wash);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countwv(View view){
+        CheckBox cb =  findViewById(R.id.check_wv);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countwis(View view){
+        CheckBox cb =  findViewById(R.id.check_wis);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
+    public void countwy(View view){
+        CheckBox cb =  findViewById(R.id.check_wy);
+        boolean checked = cb.isChecked();
+        if(checked){
+            countUs++;
+        }
+        else{
+            countUs--;
+        }
+        TextView tv = (TextView) findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+    }
 
-    }*/
 
 }

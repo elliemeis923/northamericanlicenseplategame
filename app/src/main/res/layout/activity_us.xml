@@ -30,14 +30,1371 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"/>
 
-            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/list"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".usActivity"
-            android:background="#03A9F4"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".canadaActivity"
+        android:background="#03A9F4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagealabama"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/alabama_license"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_alabama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Alabama"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countalabama"
+                    android:layout_toRightOf="@id/imagealabama"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagealaska"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/alaska_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_alaska"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Alaska"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countalaska"
+                    android:layout_toRightOf="@id/imagealaska"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagearizona"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/arizona_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_arizona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Arizona"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countarizona"
+                    android:layout_toRightOf="@id/imagearizona"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagearkansas"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/arkansas_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_arkansas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Arkansas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countarkansas"
+                    android:layout_toRightOf="@id/imagearkansas"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagecalifornia"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/california_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_california"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="California"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countcalifornia"
+                    android:layout_toRightOf="@id/imagecalifornia"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagecolorado"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/colorado_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_colorado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Colorado"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countcolorado"
+                    android:layout_toRightOf="@id/imagecolorado"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageconnecticut"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/connecticut_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_connecticut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Connecticut"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countconnecticut"
+                    android:layout_toRightOf="@id/imageconnecticut"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagedelaware"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/delaware_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_delaware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Delaware"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countdelaware"
+                    android:layout_toRightOf="@id/imagedelaware"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageflorida"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/florida_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_florida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Florida"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countflorida"
+                    android:layout_toRightOf="@id/imageflorida"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagegeorgia"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/georgia_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_georgia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Georgia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countgeorgia"
+                    android:layout_toRightOf="@id/imagegeorgia"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagehawaii"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/hawaii_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_hawaii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Hawaii"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="counthawaii"
+                    android:layout_toRightOf="@id/imagehawaii"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageidaho"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/idaho_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_idaho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Idaho"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countidaho"
+                    android:layout_toRightOf="@id/imageidaho"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageillinois"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/illinois_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_illinois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Illinois"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countillinois"
+                    android:layout_toRightOf="@id/imageillinois"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageindiana"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/indiana_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_indiana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Indiana"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countindiana"
+                    android:layout_toRightOf="@id/imageindiana"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageiowa"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/iowa_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_iowa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Iowa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countiowa"
+                    android:layout_toRightOf="@id/imageiowa"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagekansas"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/kansas_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_kansas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Kansas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countkansas"
+                    android:layout_toRightOf="@id/imagekansas"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagekentucky"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/kentucky_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_kentucky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Kentucky"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countkentucky"
+                    android:layout_toRightOf="@id/imagekentucky"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagelouisiana"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/louisiana_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_louisiana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="louisiana"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countlouisiana"
+                    android:layout_toRightOf="@id/imagelouisiana"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemaine"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/maine_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_maine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Maine"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmaine"
+                    android:layout_toRightOf="@id/imagemaine"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemaryland"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/maryland_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_maryland"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Maryland"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmaryland"
+                    android:layout_toRightOf="@id/imagemaryland"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemass"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/massachusetts_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_mass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Massachusetts"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmass"
+                    android:layout_toRightOf="@id/imagemass"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemichigan"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/michigan_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_michigan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Michigan"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmichigan"
+                    android:layout_toRightOf="@id/imagemichigan"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageminnesota"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/minnesota_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_minnesota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Minnesota"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countminnesota"
+                    android:layout_toRightOf="@id/imageminnesota"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemississippi"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/mississippi_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_mississippi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Mississippi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmississippi"
+                    android:layout_toRightOf="@id/imagemississippi"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemissouri"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/missouri_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_missouri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Missouri"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmissouri"
+                    android:layout_toRightOf="@id/imagemissouri"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagemontana"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/montana_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_montana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Montana"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countmontana"
+                    android:layout_toRightOf="@id/imagemontana"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenebraska"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/nebraska_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nebraska"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Nebraska"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnebraska"
+                    android:layout_toRightOf="@id/imagenebraska"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenevada"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/nevada_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nevada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Nevada"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnevada"
+                    android:layout_toRightOf="@id/imagenevada"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenh"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/newhampshire_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="New Hampshire"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnh"
+                    android:layout_toRightOf="@id/imagenh"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenj"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/newjersey_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="New Jersey"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnj"
+                    android:layout_toRightOf="@id/imagenj"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenm"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/newmexico_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="New Mexico"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnm"
+                    android:layout_toRightOf="@id/imagenm"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageny"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/newyork_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_ny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="New York"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countny"
+                    android:layout_toRightOf="@id/imageny"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenc"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/northcarolina_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="North Carolina"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnc"
+                    android:layout_toRightOf="@id/imagenc"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagend"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/northdakota_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_nd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="North Dakota"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countnd"
+                    android:layout_toRightOf="@id/imagend"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageohio"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/ohio_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_ohio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Ohio"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countohio"
+                    android:layout_toRightOf="@id/imageohio"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageok"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/oklahoma_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Oklahoma"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countok"
+                    android:layout_toRightOf="@id/imageok"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageor"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/oregon_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Oregon"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countor"
+                    android:layout_toRightOf="@id/imageor"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagepenn"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/pennsylvania_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_penn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Pennsylvania"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countpenn"
+                    android:layout_toRightOf="@id/imagepenn"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageri"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/rhodeisland_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_ri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Rhode Island"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countri"
+                    android:layout_toRightOf="@id/imageri"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagesc"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/southcarolina_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="South Carolina"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countsc"
+                    android:layout_toRightOf="@id/imagesc"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagesd"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/southdakota_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_sd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="South Dakota"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countsd"
+                    android:layout_toRightOf="@id/imagesd"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagetenn"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/tennessee_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_tenn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Tennessee"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="counttenn"
+                    android:layout_toRightOf="@id/imagetenn"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagetx"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/texas_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Texas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="counttx"
+                    android:layout_toRightOf="@id/imagetx"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageutah"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/utah_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_utah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Utah"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countutah"
+                    android:layout_toRightOf="@id/imageutah"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagevermont"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/vermont_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_vermont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Vermont"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countvermont"
+                    android:layout_toRightOf="@id/imagevermont"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagevirginia"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/virginia_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_virginia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Virginia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countvirginia"
+                    android:layout_toRightOf="@id/imagevirginia"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagewash"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/washington_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_wash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Washington"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countwash"
+                    android:layout_toRightOf="@id/imagewash"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagewv"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/westvirginia_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_wv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="West Virginia"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countwv"
+                    android:layout_toRightOf="@id/imagewv"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagewis"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/wisconsin_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_wis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Wisconsin"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countwis"
+                    android:layout_toRightOf="@id/imagewis"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagewy"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:src="@drawable/wyoming_license_thumb"
+                    android:background="#03A9F4"/>
+
+                <CheckBox
+                    android:id="@+id/check_wy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    tools:text="Wyoming"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="countwy"
+                    android:layout_toRightOf="@id/imagewy"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 

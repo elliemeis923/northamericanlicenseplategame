@@ -1,23 +1,20 @@
 package com.example.northamericanlicenseplategame;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-
 public class mexicoActivity extends AppCompatActivity {
 
     public int countMexico = 0;
+
+    public int getCountMexico(){
+        return countMexico;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +39,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countbc(View view){
@@ -54,7 +51,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countbcs(View view){
@@ -66,7 +63,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countcampeche(View view){
@@ -78,7 +75,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countchiapas(View view){
@@ -90,7 +87,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countchihuahua(View view){
@@ -102,7 +99,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countcoahuila(View view){
@@ -114,7 +111,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countcolima(View view){
@@ -126,7 +123,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countdurango(View view){
@@ -138,7 +135,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countguanajuato(View view){
@@ -150,7 +147,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countguerrero(View view){
@@ -162,7 +159,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void counthidalgo(View view){
@@ -174,7 +171,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countjalisco(View view){
@@ -186,7 +183,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countmexico(View view){
@@ -198,7 +195,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
 
     }
@@ -211,7 +208,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countmichoacan(View view){
@@ -223,7 +220,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countmorelos(View view){
@@ -235,7 +232,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countnayarit(View view){
@@ -247,7 +244,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countnl(View view){
@@ -259,7 +256,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countoaxaca(View view){
@@ -271,7 +268,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countpuebla(View view){
@@ -283,7 +280,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countqueretaro(View view){
@@ -295,7 +292,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countqr(View view){
@@ -307,7 +304,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countslp(View view){
@@ -319,7 +316,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countsinaloa(View view){
@@ -331,7 +328,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countsonora(View view){
@@ -343,7 +340,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void counttabasco(View view){
@@ -355,7 +352,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void counttamaulipas(View view){
@@ -367,7 +364,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void counttlaxcala(View view){
@@ -379,7 +376,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countvc(View view){
@@ -391,7 +388,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countyucatan(View view){
@@ -403,7 +400,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
     public void countzacatas(View view){
@@ -415,7 +412,7 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent);
+        TextView tv = (TextView) findViewById(R.id.percent_us);
         tv.setText(countMexico +"/32");
     }
 }
