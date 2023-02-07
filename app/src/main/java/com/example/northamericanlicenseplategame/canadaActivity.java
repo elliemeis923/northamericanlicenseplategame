@@ -17,19 +17,17 @@ import java.util.ArrayList;
 
 public class canadaActivity extends AppCompatActivity {
 
-
-    public int countCanada = 0;
-
-    public int getCountCanada() {
-        return countCanada;
-    }
+    public int countCanada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canada);
 
-        // your code goes here...
+        countCanada = calculateCount();
+        TextView tv = (TextView) findViewById(R.id.percent_canada);
+        tv.setText(countCanada + "/13");
+
         SharedPreferences sh = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
         boolean c1 = sh.getBoolean("1", false);
         CheckBox a = (CheckBox) findViewById(R.id.check_alberta);
@@ -71,51 +69,52 @@ public class canadaActivity extends AppCompatActivity {
         CheckBox m = (CheckBox) findViewById(R.id.check_yukon);
         m.setChecked(c13);
 
-        String percent = sh.getString("percent", "0/13");
-        TextView pC = (TextView) findViewById(R.id.percent_canada);
-        pC.setText(percent);
-
-
     }
-        public void save(View view){
-            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+        public int calculateCount(){
+            int count = 0;
+            CheckBox a =  findViewById(R.id.check_alberta);
+            boolean checked = a.isChecked();
+            if(checked){count ++;}
+            CheckBox b =  findViewById(R.id.check_bc);
+            boolean c2 = b.isChecked();
+            if(c2){count ++;}
+            CheckBox c =  findViewById(R.id.check_manitoba);
+            boolean c3 = c.isChecked();
+            if(c3){count ++;}
+            CheckBox d =  findViewById(R.id.check_nb);
+            boolean c4 = d.isChecked();
+            if(c4){count ++;}
+            CheckBox e =  findViewById(R.id.check_nfl);
+            boolean c5 = e.isChecked();
+            if(c5){count ++;}
+            CheckBox f =  findViewById(R.id.check_nt);
+            boolean c6 = f.isChecked();
+            if(c6){count ++;}
+            CheckBox g =  findViewById(R.id.check_ns);
+            boolean c7 = g.isChecked();
+            if(c7){count ++;}
+            CheckBox h =  findViewById(R.id.check_nunavut);
+            boolean c8 = h.isChecked();
+            if(c8){count ++;}
+            CheckBox i =  findViewById(R.id.check_ontario);
+            boolean c9 = i.isChecked();
+            if(c9){count ++;}
+            CheckBox m =  findViewById(R.id.check_saska);
+            boolean c10 = m.isChecked();
+            if(c10){count ++;}
+            CheckBox j =  findViewById(R.id.check_pei);
+            boolean c11 = j.isChecked();
+            if(c11){count ++;}
+            CheckBox k =  findViewById(R.id.check_quebec);
+            boolean c12 = k.isChecked();
+            if(c12){count ++;}
+            CheckBox l =  findViewById(R.id.check_yukon);
+            boolean c13 = l.isChecked();
+            if(c13){count ++;}
 
-            CheckBox a = (CheckBox) findViewById(R.id.check_alberta);
-            CheckBox b = (CheckBox) findViewById(R.id.check_bc);
-            CheckBox c = (CheckBox) findViewById(R.id.check_manitoba);
-            CheckBox d = (CheckBox) findViewById(R.id.check_nb);
-            CheckBox e = (CheckBox) findViewById(R.id.check_nfl);
-            CheckBox f = (CheckBox) findViewById(R.id.check_nt);
-            CheckBox g = (CheckBox) findViewById(R.id.check_ns);
-            CheckBox h = (CheckBox) findViewById(R.id.check_nunavut);
-            CheckBox i = (CheckBox) findViewById(R.id.check_ontario);
-            CheckBox j = (CheckBox) findViewById(R.id.check_pei);
-            CheckBox k = (CheckBox) findViewById(R.id.check_quebec);
-            CheckBox l = (CheckBox) findViewById(R.id.check_saska);
-            CheckBox m = (CheckBox) findViewById(R.id.check_yukon);
-            TextView pC = (TextView) findViewById(R.id.percent_canada);
-
-            SharedPreferences.Editor myEdit = sharedPreferences.edit();
-
-            myEdit.putBoolean("1", a.isChecked());
-            myEdit.putBoolean("2", a.isChecked());
-            myEdit.putBoolean("3", a.isChecked());
-            myEdit.putBoolean("4", a.isChecked());
-            myEdit.putBoolean("5", a.isChecked());
-            myEdit.putBoolean("6", a.isChecked());
-            myEdit.putBoolean("7", a.isChecked());
-            myEdit.putBoolean("8", a.isChecked());
-            myEdit.putBoolean("9", a.isChecked());
-            myEdit.putBoolean("10", a.isChecked());
-            myEdit.putBoolean("11", a.isChecked());
-            myEdit.putBoolean("12", a.isChecked());
-            myEdit.putBoolean("13", a.isChecked());
-            myEdit.putString("percent", pC.getText().toString());
-
-            myEdit.apply();
-
-
+            return count;
         }
+
         public void countalberta(View view){
             CheckBox cb =  findViewById(R.id.check_alberta);
             boolean checked = cb.isChecked();
@@ -127,6 +126,12 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            //save
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_alberta);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("1", a.isChecked());
+            myEdit.apply();
         }
         public void countbc(View view){
             CheckBox cb =  findViewById(R.id.check_bc);
@@ -139,6 +144,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_bc);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("2", a.isChecked());
+            myEdit.apply();
         }
         public void countmanitoba(View view){
             CheckBox cb =  findViewById(R.id.check_manitoba);
@@ -151,6 +161,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_manitoba);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("3", a.isChecked());
+            myEdit.apply();
         }
         public void countnb(View view){
             CheckBox cb =  findViewById(R.id.check_nb);
@@ -163,6 +178,12 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_nb);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("4", a.isChecked());
+            myEdit.apply();
+
         }
         public void countnfl(View view){
             CheckBox cb =  findViewById(R.id.check_nfl);
@@ -175,6 +196,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_nfl);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("5", a.isChecked());
+            myEdit.apply();
         }
         public void countnt(View view){
             CheckBox cb =  findViewById(R.id.check_nt);
@@ -187,6 +213,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_nt);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("6", a.isChecked());
+            myEdit.apply();
         }
         public void countns(View view){
             CheckBox cb =  findViewById(R.id.check_ns);
@@ -199,6 +230,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_ns);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("7", a.isChecked());
+            myEdit.apply();
         }
         public void countnunavut(View view){
             CheckBox cb =  findViewById(R.id.check_nunavut);
@@ -211,6 +247,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_nunavut);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("8", a.isChecked());
+            myEdit.apply();
         }
         public void countontario(View view){
             CheckBox cb =  findViewById(R.id.check_ontario);
@@ -223,6 +264,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_ontario);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("9", a.isChecked());
+            myEdit.apply();
         }
         public void countpei(View view){
             CheckBox cb =  findViewById(R.id.check_pei);
@@ -235,6 +281,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_pei);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("10", a.isChecked());
+            myEdit.apply();
         }
         public void countquebec(View view){
             CheckBox cb =  findViewById(R.id.check_quebec);
@@ -247,6 +298,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_quebec);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("11", a.isChecked());
+            myEdit.apply();
         }
         public void countsaska(View view){
             CheckBox cb =  findViewById(R.id.check_saska);
@@ -259,6 +315,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_saska);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("12", a.isChecked());
+            myEdit.apply();
         }
         public void countyukon(View view){
             CheckBox cb =  findViewById(R.id.check_yukon);
@@ -271,6 +332,11 @@ public class canadaActivity extends AppCompatActivity {
             }
             TextView tv = (TextView) findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            CheckBox a = (CheckBox) findViewById(R.id.check_yukon);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putBoolean("13", a.isChecked());
+            myEdit.apply();
         }
 
 }

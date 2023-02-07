@@ -215,7 +215,7 @@
                             android:id="@+id/imagens"
                             android:layout_width="88dp"
                             android:layout_height="88dp"
-                            android:src="@drawable/alberta"
+                            android:src="@drawable/nova_scotia"
                             android:background="#E8799F"/>
 
                         <CheckBox
@@ -378,7 +378,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/yukon"
-                            android:background="#3F51B5"/>
+                            android:background="#E8799F"/>
 
                         <CheckBox
                             android:id="@+id/check_yukon"
