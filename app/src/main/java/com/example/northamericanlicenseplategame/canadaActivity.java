@@ -24,93 +24,80 @@ public class canadaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canada);
 
-        countCanada = calculateCount();
-        TextView tv = (TextView) findViewById(R.id.percent_canada);
-        tv.setText(countCanada + "/13");
-
         SharedPreferences sh = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
         boolean c1 = sh.getBoolean("1", false);
-        CheckBox a = (CheckBox) findViewById(R.id.check_alberta);
+        CheckBox a =  findViewById(R.id.check_alberta);
         a.setChecked(c1);
         boolean c2 = sh.getBoolean("2", false);
-        CheckBox b = (CheckBox) findViewById(R.id.check_bc);
+        CheckBox b =  findViewById(R.id.check_bc);
         b.setChecked(c2);
         boolean c3 = sh.getBoolean("3", false);
-        CheckBox c = (CheckBox) findViewById(R.id.check_manitoba);
+        CheckBox c =  findViewById(R.id.check_manitoba);
         c.setChecked(c3);
         boolean c4 = sh.getBoolean("4", false);
-        CheckBox d = (CheckBox) findViewById(R.id.check_nb);
+        CheckBox d =  findViewById(R.id.check_nb);
         d.setChecked(c4);
         boolean c5 = sh.getBoolean("5", false);
-        CheckBox e = (CheckBox) findViewById(R.id.check_nfl);
+        CheckBox e =  findViewById(R.id.check_nfl);
         e.setChecked(c5);
         boolean c6 = sh.getBoolean("6", false);
-        CheckBox f = (CheckBox) findViewById(R.id.check_nt);
+        CheckBox f =  findViewById(R.id.check_nt);
         f.setChecked(c6);
         boolean c7 = sh.getBoolean("7", false);
-        CheckBox g = (CheckBox) findViewById(R.id.check_ns);
+        CheckBox g =  findViewById(R.id.check_ns);
         g.setChecked(c7);
         boolean c8 = sh.getBoolean("8", false);
-        CheckBox h = (CheckBox) findViewById(R.id.check_nunavut);
+        CheckBox h =  findViewById(R.id.check_nunavut);
         h.setChecked(c8);
         boolean c9 = sh.getBoolean("9", false);
-        CheckBox i = (CheckBox) findViewById(R.id.check_ontario);
+        CheckBox i =  findViewById(R.id.check_ontario);
         i.setChecked(c8);
         boolean c10 = sh.getBoolean("10", false);
-        CheckBox j = (CheckBox) findViewById(R.id.check_pei);
+        CheckBox j =  findViewById(R.id.check_pei);
         j.setChecked(c10);
         boolean c11 = sh.getBoolean("11", false);
-        CheckBox k = (CheckBox) findViewById(R.id.check_quebec);
+        CheckBox k =  findViewById(R.id.check_quebec);
         k.setChecked(c11);
         boolean c12 = sh.getBoolean("12", false);
-        CheckBox l = (CheckBox) findViewById(R.id.check_saska);
+        CheckBox l =  findViewById(R.id.check_saska);
         l.setChecked(c12);
         boolean c13 = sh.getBoolean("13", false);
-        CheckBox m = (CheckBox) findViewById(R.id.check_yukon);
+        CheckBox m =  findViewById(R.id.check_yukon);
         m.setChecked(c13);
+
+        countCanada = calculateCount();
+        TextView tv =  findViewById(R.id.percent_canada);
+        tv.setText(countCanada + "/13");
 
     }
         public int calculateCount(){
             int count = 0;
             CheckBox a =  findViewById(R.id.check_alberta);
-            boolean checked = a.isChecked();
-            if(checked){count ++;}
+            if(a.isChecked()){count ++;}
             CheckBox b =  findViewById(R.id.check_bc);
-            boolean c2 = b.isChecked();
-            if(c2){count ++;}
+            if(b.isChecked()){count ++;}
             CheckBox c =  findViewById(R.id.check_manitoba);
-            boolean c3 = c.isChecked();
-            if(c3){count ++;}
+            if(c.isChecked()){count ++;}
             CheckBox d =  findViewById(R.id.check_nb);
-            boolean c4 = d.isChecked();
-            if(c4){count ++;}
+            if(d.isChecked()){count ++;}
             CheckBox e =  findViewById(R.id.check_nfl);
-            boolean c5 = e.isChecked();
-            if(c5){count ++;}
+            if(e.isChecked()){count ++;}
             CheckBox f =  findViewById(R.id.check_nt);
-            boolean c6 = f.isChecked();
-            if(c6){count ++;}
+            if(f.isChecked()){count ++;}
             CheckBox g =  findViewById(R.id.check_ns);
-            boolean c7 = g.isChecked();
-            if(c7){count ++;}
+            if(g.isChecked()){count ++;}
             CheckBox h =  findViewById(R.id.check_nunavut);
-            boolean c8 = h.isChecked();
-            if(c8){count ++;}
+            if(h.isChecked()){count ++;}
             CheckBox i =  findViewById(R.id.check_ontario);
-            boolean c9 = i.isChecked();
-            if(c9){count ++;}
-            CheckBox m =  findViewById(R.id.check_saska);
-            boolean c10 = m.isChecked();
-            if(c10){count ++;}
-            CheckBox j =  findViewById(R.id.check_pei);
-            boolean c11 = j.isChecked();
-            if(c11){count ++;}
-            CheckBox k =  findViewById(R.id.check_quebec);
-            boolean c12 = k.isChecked();
-            if(c12){count ++;}
-            CheckBox l =  findViewById(R.id.check_yukon);
-            boolean c13 = l.isChecked();
-            if(c13){count ++;}
+            if(i.isChecked()){count ++;}
+            CheckBox j =  findViewById(R.id.check_saska);
+            if(j.isChecked()){count ++;}
+            CheckBox k =  findViewById(R.id.check_pei);
+            if(k.isChecked()){count ++;}
+            CheckBox l =  findViewById(R.id.check_quebec);
+            if(l.isChecked()){count ++;}
+            CheckBox m =  findViewById(R.id.check_yukon);
+            if(m.isChecked()){count ++;}
 
             return count;
         }
