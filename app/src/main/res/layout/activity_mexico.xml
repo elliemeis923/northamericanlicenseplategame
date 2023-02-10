@@ -21,7 +21,7 @@
         />
 
     <TextView
-        android:id="@+id/percent_us"
+        android:id="@+id/percent_mexico"
         android:layout_width="match_parent"
         android:layout_height="99dp"
         android:gravity="center"
@@ -36,7 +36,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".canadaActivity"
+            tools:context=".mexicoActivity"
             android:background="#4CAF50">
 
             <LinearLayout

@@ -10,7 +10,7 @@
     android:background="#5E7876">
 
     <TextView
-        android:id="@+id/title_mexico"
+        android:id="@+id/title_canada"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Canada Plates"

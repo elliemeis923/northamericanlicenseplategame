@@ -10,7 +10,7 @@
     android:background="#5E7876">
 
     <TextView
-        android:id="@+id/title_mexico"
+        android:id="@+id/title_us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="United States Plates"
@@ -36,7 +36,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".canadaActivity"
+        tools:context=".usActivity"
         android:background="#03A9F4">
 
         <LinearLayout

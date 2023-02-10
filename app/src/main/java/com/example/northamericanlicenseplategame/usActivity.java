@@ -12,274 +12,271 @@ public class usActivity extends AppCompatActivity {
 
     public int countUs;
 
-    public int getCountUs() {
-        return countUs;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_us);
 
-        SharedPreferences sh = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-        boolean c1 = sh.getBoolean("1", false);
+        SharedPreferences shu = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+        boolean c1 = shu.getBoolean("1", false);
         CheckBox a =  findViewById(R.id.check_alabama);
         a.setChecked(c1);
-        boolean c2 = sh.getBoolean("2", false);
+        boolean c2 = shu.getBoolean("2", false);
         CheckBox b =  findViewById(R.id.check_alaska);
         b.setChecked(c2);
-        boolean c3 = sh.getBoolean("3", false);
+        boolean c3 = shu.getBoolean("3", false);
         CheckBox c =  findViewById(R.id.check_arizona);
         c.setChecked(c3);
-        boolean c4 = sh.getBoolean("4", false);
+        boolean c4 = shu.getBoolean("4", false);
         CheckBox d =  findViewById(R.id.check_arkansas);
         d.setChecked(c4);
-        boolean c5 = sh.getBoolean("5", false);
+        boolean c5 = shu.getBoolean("5", false);
         CheckBox e =  findViewById(R.id.check_california);
         e.setChecked(c5);
-        boolean c6 = sh.getBoolean("6", false);
+        boolean c6 = shu.getBoolean("6", false);
         CheckBox f =  findViewById(R.id.check_colorado);
         f.setChecked(c6);
-        boolean c7 = sh.getBoolean("7", false);
+        boolean c7 = shu.getBoolean("7", false);
         CheckBox g =  findViewById(R.id.check_connecticut);
         g.setChecked(c7);
-        boolean c8 = sh.getBoolean("8", false);
+        boolean c8 = shu.getBoolean("8", false);
         CheckBox h =  findViewById(R.id.check_delaware);
         h.setChecked(c8);
-        boolean c9 = sh.getBoolean("9", false);
+        boolean c9 = shu.getBoolean("9", false);
         CheckBox i =  findViewById(R.id.check_florida);
         i.setChecked(c8);
-        boolean c10 = sh.getBoolean("10", false);
+        boolean c10 = shu.getBoolean("10", false);
         CheckBox j =  findViewById(R.id.check_georgia);
         j.setChecked(c10);
-        boolean c11 = sh.getBoolean("11", false);
+        boolean c11 = shu.getBoolean("11", false);
         CheckBox k =  findViewById(R.id.check_hawaii);
         k.setChecked(c11);
-        boolean c12 = sh.getBoolean("12", false);
+        boolean c12 = shu.getBoolean("12", false);
         CheckBox l =  findViewById(R.id.check_idaho);
         l.setChecked(c12);
-        boolean c13 = sh.getBoolean("13", false);
+        boolean c13 = shu.getBoolean("13", false);
         CheckBox m =  findViewById(R.id.check_illinois);
         m.setChecked(c13);
-        boolean c14 = sh.getBoolean("14", false);
+        boolean c14 = shu.getBoolean("14", false);
         CheckBox n =  findViewById(R.id.check_indiana);
         n.setChecked(c14);
-        boolean c15 = sh.getBoolean("15", false);
+        boolean c15 = shu.getBoolean("15", false);
         CheckBox o =  findViewById(R.id.check_iowa);
         o.setChecked(c15);
-        boolean c16 = sh.getBoolean("16", false);
+        boolean c16 = shu.getBoolean("16", false);
         CheckBox p =  findViewById(R.id.check_kansas);
         p.setChecked(c16);
-        boolean c17 = sh.getBoolean("17", false);
+        boolean c17 = shu.getBoolean("17", false);
         CheckBox q =  findViewById(R.id.check_kentucky);
         q.setChecked(c17);
-        boolean c18 = sh.getBoolean("18", false);
+        boolean c18 = shu.getBoolean("18", false);
         CheckBox r =  findViewById(R.id.check_louisiana);
         r.setChecked(c18);
-        boolean c19 = sh.getBoolean("19", false);
+        boolean c19 = shu.getBoolean("19", false);
         CheckBox s =  findViewById(R.id.check_maine);
         s.setChecked(c19);
-        boolean c20 = sh.getBoolean("20", false);
+        boolean c20 = shu.getBoolean("20", false);
         CheckBox t =  findViewById(R.id.check_maryland);
         t.setChecked(c20);
-        boolean c21 = sh.getBoolean("21", false);
+        boolean c21 = shu.getBoolean("21", false);
         CheckBox u =  findViewById(R.id.check_mass);
         u.setChecked(c21);
-        boolean c22 = sh.getBoolean("22", false);
+        boolean c22 = shu.getBoolean("22", false);
         CheckBox v =  findViewById(R.id.check_michigan);
         v.setChecked(c22);
-        boolean c23 = sh.getBoolean("23", false);
+        boolean c23 = shu.getBoolean("23", false);
         CheckBox w =  findViewById(R.id.check_minnesota);
         w.setChecked(c23);
-        boolean c24 = sh.getBoolean("24", false);
+        boolean c24 = shu.getBoolean("24", false);
         CheckBox x =  findViewById(R.id.check_mississippi);
         x.setChecked(c24);
-        boolean c25 = sh.getBoolean("25", false);
+        boolean c25 = shu.getBoolean("25", false);
         CheckBox y =  findViewById(R.id.check_missouri);
         y.setChecked(c25);
-        boolean c26 = sh.getBoolean("26", false);
+        boolean c26 = shu.getBoolean("26", false);
         CheckBox z =  findViewById(R.id.check_montana);
         z.setChecked(c26);
-        boolean c27 = sh.getBoolean("27", false);
+        boolean c27 = shu.getBoolean("27", false);
         CheckBox a1 =  findViewById(R.id.check_nebraska);
         a1.setChecked(c27);
-        boolean c28 = sh.getBoolean("28", false);
+        boolean c28 = shu.getBoolean("28", false);
         CheckBox b1 =  findViewById(R.id.check_nevada);
         b1.setChecked(c28);
-        boolean c29 = sh.getBoolean("29", false);
+        boolean c29 = shu.getBoolean("29", false);
         CheckBox calso =  findViewById(R.id.check_nh);
         calso.setChecked(c29);
-        boolean c30 = sh.getBoolean("30", false);
+        boolean c30 = shu.getBoolean("30", false);
         CheckBox d1 =  findViewById(R.id.check_nj);
         d1.setChecked(c30);
-        boolean c31 = sh.getBoolean("31", false);
+        boolean c31 = shu.getBoolean("31", false);
         CheckBox e1 =  findViewById(R.id.check_nm);
         e1.setChecked(c31);
-        boolean c32 = sh.getBoolean("32", false);
+        boolean c32 = shu.getBoolean("32", false);
         CheckBox f1 =  findViewById(R.id.check_ny);
         f1.setChecked(c32);
-        boolean c33 = sh.getBoolean("33", false);
+        boolean c33 = shu.getBoolean("33", false);
         CheckBox g1 =  findViewById(R.id.check_nc);
         g1.setChecked(c33);
-        boolean c34 = sh.getBoolean("34", false);
+        boolean c34 = shu.getBoolean("34", false);
         CheckBox h1 =  findViewById(R.id.check_nd);
         h1.setChecked(c34);
-        boolean c35 = sh.getBoolean("35", false);
+        boolean c35 = shu.getBoolean("35", false);
         CheckBox i1 =  findViewById(R.id.check_ohio);
         i1.setChecked(c35);
-        boolean c36 = sh.getBoolean("36", false);
+        boolean c36 = shu.getBoolean("36", false);
         CheckBox j1 =  findViewById(R.id.check_ok);
         j1.setChecked(c36);
-        boolean c37 = sh.getBoolean("37", false);
+        boolean c37 = shu.getBoolean("37", false);
         CheckBox k1 =  findViewById(R.id.check_or);
         k1.setChecked(c37);
-        boolean c38 = sh.getBoolean("38", false);
+        boolean c38 = shu.getBoolean("38", false);
         CheckBox l1 =  findViewById(R.id.check_penn);
         l1.setChecked(c38);
-        boolean c39 = sh.getBoolean("39", false);
+        boolean c39 = shu.getBoolean("39", false);
         CheckBox m1 =  findViewById(R.id.check_ri);
         m1.setChecked(c39);
-        boolean c40 = sh.getBoolean("40", false);
+        boolean c40 = shu.getBoolean("40", false);
         CheckBox n1 =  findViewById(R.id.check_sc);
         n1.setChecked(c40);
-        boolean c41 = sh.getBoolean("41", false);
+        boolean c41 = shu.getBoolean("41", false);
         CheckBox o1 =  findViewById(R.id.check_sd);
         o1.setChecked(c41);
-        boolean c42 = sh.getBoolean("42", false);
+        boolean c42 = shu.getBoolean("42", false);
         CheckBox p1 =  findViewById(R.id.check_tenn);
         p1.setChecked(c42);
-        boolean c43 = sh.getBoolean("43", false);
+        boolean c43 = shu.getBoolean("43", false);
         CheckBox q1 =  findViewById(R.id.check_tx);
         q1.setChecked(c43);
-        boolean c44 = sh.getBoolean("44", false);
+        boolean c44 = shu.getBoolean("44", false);
         CheckBox r1 =  findViewById(R.id.check_utah);
         r1.setChecked(c44);
-        boolean c45 = sh.getBoolean("45", false);
+        boolean c45 = shu.getBoolean("45", false);
         CheckBox s1 =  findViewById(R.id.check_vermont);
         s1.setChecked(c45);
-        boolean c46 = sh.getBoolean("46", false);
+        boolean c46 = shu.getBoolean("46", false);
         CheckBox t1 =  findViewById(R.id.check_virginia);
         t1.setChecked(c46);
-        boolean c47 = sh.getBoolean("47", false);
+        boolean c47 = shu.getBoolean("47", false);
         CheckBox u1 =  findViewById(R.id.check_wash);
         u1.setChecked(c47);
-        boolean c48 = sh.getBoolean("48", false);
+        boolean c48 = shu.getBoolean("48", false);
         CheckBox v1 =  findViewById(R.id.check_wv);
         v1.setChecked(c48);
-        boolean c49 = sh.getBoolean("49", false);
+        boolean c49 = shu.getBoolean("49", false);
         CheckBox w1 =  findViewById(R.id.check_wis);
         w1.setChecked(c49);
-        boolean c50 = sh.getBoolean("50", false);
+        boolean c50 = shu.getBoolean("50", false);
         CheckBox x1 =  findViewById(R.id.check_wy);
         x1.setChecked(c50);
 
         countUs = calculateCount();
-        TextView tv =  findViewById(R.id.percent_canada);
+        TextView tv =  findViewById(R.id.percent_us);
         tv.setText(countUs + "/50");
     }
 
     public int calculateCount(){
         int count = 0;
-        CheckBox a =  findViewById(R.id.check_alabama);
-        if(a.isChecked()){count ++;}
-        CheckBox b =  findViewById(R.id.check_alaska);
-        if(b.isChecked()){count ++;}
-        CheckBox c =  findViewById(R.id.check_arizona);
-        if(c.isChecked()){count ++;}
-        CheckBox d =  findViewById(R.id.check_arkansas);
-        if(d.isChecked()){count ++;}
-        CheckBox e =  findViewById(R.id.check_california);
-        if(e.isChecked()){count ++;}
-        CheckBox f =  findViewById(R.id.check_colorado);
-        if(f.isChecked()){count ++;}
-        CheckBox g =  findViewById(R.id.check_ns);
-        if(g.isChecked()){count ++;}
-        CheckBox h =  findViewById(R.id.check_connecticut);
-        if(h.isChecked()){count ++;}
-        CheckBox i =  findViewById(R.id.check_delaware);
-        if(i.isChecked()){count ++;}
-        CheckBox j =  findViewById(R.id.check_florida);
-        if(j.isChecked()){count ++;}
-        CheckBox k =  findViewById(R.id.check_georgia);
-        if(k.isChecked()){count ++;}
-        CheckBox l =  findViewById(R.id.check_hawaii);
-        if(l.isChecked()){count ++;}
-        CheckBox m =  findViewById(R.id.check_idaho);
-        if(m.isChecked()){count ++;}
-        CheckBox n =  findViewById(R.id.check_illinois);
-        if(n.isChecked()){count ++;}
-        CheckBox o =  findViewById(R.id.check_indiana);
-        if(o.isChecked()){count ++;}
-        CheckBox p =  findViewById(R.id.check_iowa);
-        if(p.isChecked()){count ++;}
-        CheckBox q =  findViewById(R.id.check_kansas);
-        if(q.isChecked()){count ++;}
-        CheckBox r =  findViewById(R.id.check_kentucky);
-        if(r.isChecked()){count ++;}
-        CheckBox s =  findViewById(R.id.check_louisiana);
-        if(s.isChecked()){count ++;}
-        CheckBox t =  findViewById(R.id.check_maine);
-        if(t.isChecked()){count ++;}
-        CheckBox u =  findViewById(R.id.check_maryland);
-        if(u.isChecked()){count ++;}
-        CheckBox v =  findViewById(R.id.check_mass);
-        if(v.isChecked()){count ++;}
-        CheckBox w =  findViewById(R.id.check_michigan);
-        if(w.isChecked()){count ++;}
-        CheckBox x =  findViewById(R.id.check_mississippi);
-        if(x.isChecked()){count ++;}
-        CheckBox y =  findViewById(R.id.check_missouri);
-        if(y.isChecked()){count ++;}
-        CheckBox z =  findViewById(R.id.check_montana);
-        if(z.isChecked()){count ++;}
-        CheckBox a1 =  findViewById(R.id.check_nebraska);
-        if(a1.isChecked()){count ++;}
-        CheckBox b1 =  findViewById(R.id.check_nevada);
-        if(b1.isChecked()){count ++;}
-        CheckBox c1 =  findViewById(R.id.check_nh);
-        if(c1.isChecked()){count ++;}
-        CheckBox d1 =  findViewById(R.id.check_nj);
-        if(d1.isChecked()){count ++;}
-        CheckBox e1 =  findViewById(R.id.check_nm);
-        if(e1.isChecked()){count ++;}
-        CheckBox f1 =  findViewById(R.id.check_ny);
-        if(f1.isChecked()){count ++;}
-        CheckBox g1 =  findViewById(R.id.check_nc);
-        if(g1.isChecked()){count ++;}
-        CheckBox h1 =  findViewById(R.id.check_nd);
-        if(h1.isChecked()){count ++;}
-        CheckBox i1 =  findViewById(R.id.check_ohio);
-        if(i1.isChecked()){count ++;}
-        CheckBox j1 =  findViewById(R.id.check_ok);
-        if(j1.isChecked()){count ++;}
-        CheckBox k1 =  findViewById(R.id.check_or);
-        if(k1.isChecked()){count ++;}
-        CheckBox l1 =  findViewById(R.id.check_penn);
-        if(l1.isChecked()){count ++;}
-        CheckBox m1 =  findViewById(R.id.check_ri);
-        if(m1.isChecked()){count ++;}
-        CheckBox n1 =  findViewById(R.id.check_sc);
-        if(n1.isChecked()){count ++;}
-        CheckBox o1 =  findViewById(R.id.check_sd);
-        if(o1.isChecked()){count ++;}
-        CheckBox p1 =  findViewById(R.id.check_tenn);
-        if(p1.isChecked()){count ++;}
-        CheckBox q1 =  findViewById(R.id.check_tx);
-        if(q1.isChecked()){count ++;}
-        CheckBox r1 =  findViewById(R.id.check_utah);
-        if(r1.isChecked()){count ++;}
-        CheckBox s1 =  findViewById(R.id.check_vermont);
-        if(s1.isChecked()){count ++;}
-        CheckBox t1 =  findViewById(R.id.check_virginia);
-        if(t1.isChecked()){count ++;}
-        CheckBox u1 =  findViewById(R.id.check_wash);
-        if(u1.isChecked()){count ++;}
-        CheckBox v1 =  findViewById(R.id.check_wv);
-        if(v1.isChecked()){count ++;}
-        CheckBox w1 =  findViewById(R.id.check_wis);
-        if(w1.isChecked()){count ++;}
-        CheckBox x1 =  findViewById(R.id.check_wy);
-        if(x1.isChecked()){count ++;}
+        CheckBox alabama =  findViewById(R.id.check_alabama);
+        if(alabama.isChecked()){count ++;}
+        CheckBox alaska =  findViewById(R.id.check_alaska);
+        if(alaska.isChecked()){count ++;}
+        CheckBox arizona =  findViewById(R.id.check_arizona);
+        if(arizona.isChecked()){count ++;}
+        CheckBox arkansas =  findViewById(R.id.check_arkansas);
+        if(arkansas.isChecked()){count ++;}
+        CheckBox california =  findViewById(R.id.check_california);
+        if(california.isChecked()){count ++;}
+        CheckBox colorado =  findViewById(R.id.check_colorado);
+        if(colorado.isChecked()){count ++;}
+
+        CheckBox connecticut =  findViewById(R.id.check_connecticut);
+        if(connecticut.isChecked()){count ++;}
+        CheckBox delaware =  findViewById(R.id.check_delaware);
+        if(delaware.isChecked()){count ++;}
+        CheckBox florida =  findViewById(R.id.check_florida);
+        if(florida.isChecked()){count ++;}
+        CheckBox georgia =  findViewById(R.id.check_georgia);
+        if(georgia.isChecked()){count ++;}
+        CheckBox hawaii =  findViewById(R.id.check_hawaii);
+        if(hawaii.isChecked()){count ++;}
+        CheckBox idaho =  findViewById(R.id.check_idaho);
+        if(idaho.isChecked()){count ++;}
+        CheckBox ill =  findViewById(R.id.check_illinois);
+        if(ill.isChecked()){count ++;}
+        CheckBox ind =  findViewById(R.id.check_indiana);
+        if(ind.isChecked()){count ++;}
+        CheckBox iowa =  findViewById(R.id.check_iowa);
+        if(iowa.isChecked()){count ++;}
+        CheckBox kansas =  findViewById(R.id.check_kansas);
+        if(kansas.isChecked()){count ++;}
+        CheckBox kent =  findViewById(R.id.check_kentucky);
+        if(kent.isChecked()){count ++;}
+        CheckBox lou =  findViewById(R.id.check_louisiana);
+        if(lou.isChecked()){count ++;}
+        CheckBox maine =  findViewById(R.id.check_maine);
+        if(maine.isChecked()){count ++;}
+        CheckBox mary =  findViewById(R.id.check_maryland);
+        if(mary.isChecked()){count ++;}
+        CheckBox mass =  findViewById(R.id.check_mass);
+        if(mass.isChecked()){count ++;}
+        CheckBox mich =  findViewById(R.id.check_michigan);
+        if(mich.isChecked()){count ++;}
+        CheckBox minnesota =  findViewById(R.id.check_minnesota);
+        if(minnesota.isChecked()){count ++;}
+        CheckBox miss =  findViewById(R.id.check_mississippi);
+        if(miss.isChecked()){count ++;}
+        CheckBox mizzo =  findViewById(R.id.check_missouri);
+        if(mizzo.isChecked()){count ++;}
+        CheckBox mont =  findViewById(R.id.check_montana);
+        if(mont.isChecked()){count ++;}
+        CheckBox neb =  findViewById(R.id.check_nebraska);
+        if(neb.isChecked()){count ++;}
+        CheckBox nev =  findViewById(R.id.check_nevada);
+        if(nev.isChecked()){count ++;}
+        CheckBox nh =  findViewById(R.id.check_nh);
+        if(nh.isChecked()){count ++;}
+        CheckBox nj =  findViewById(R.id.check_nj);
+        if(nj.isChecked()){count ++;}
+        CheckBox nm =  findViewById(R.id.check_nm);
+        if(nm.isChecked()){count ++;}
+        CheckBox ny =  findViewById(R.id.check_ny);
+        if(ny.isChecked()){count ++;}
+        CheckBox nc =  findViewById(R.id.check_nc);
+        if(nc.isChecked()){count ++;}
+        CheckBox nd =  findViewById(R.id.check_nd);
+        if(nd.isChecked()){count ++;}
+        CheckBox ohio =  findViewById(R.id.check_ohio);
+        if(ohio.isChecked()){count ++;}
+        CheckBox ok =  findViewById(R.id.check_ok);
+        if(ok.isChecked()){count ++;}
+        CheckBox or =  findViewById(R.id.check_or);
+        if(or.isChecked()){count ++;}
+        CheckBox penn =  findViewById(R.id.check_penn);
+        if(penn.isChecked()){count ++;}
+        CheckBox ri =  findViewById(R.id.check_ri);
+        if(ri.isChecked()){count ++;}
+        CheckBox sc =  findViewById(R.id.check_sc);
+        if(sc.isChecked()){count ++;}
+        CheckBox sd =  findViewById(R.id.check_sd);
+        if(sd.isChecked()){count ++;}
+        CheckBox tenn =  findViewById(R.id.check_tenn);
+        if(tenn.isChecked()){count ++;}
+        CheckBox tx =  findViewById(R.id.check_tx);
+        if(tx.isChecked()){count ++;}
+        CheckBox utah =  findViewById(R.id.check_utah);
+        if(utah.isChecked()){count ++;}
+        CheckBox ver =  findViewById(R.id.check_vermont);
+        if(ver.isChecked()){count ++;}
+        CheckBox virg =  findViewById(R.id.check_virginia);
+        if(virg.isChecked()){count ++;}
+        CheckBox wash =  findViewById(R.id.check_wash);
+        if(wash.isChecked()){count ++;}
+        CheckBox wv =  findViewById(R.id.check_wv);
+        if(wv.isChecked()){count ++;}
+        CheckBox wis =  findViewById(R.id.check_wis);
+        if(wis.isChecked()){count ++;}
+        CheckBox wy =  findViewById(R.id.check_wy);
+        if(wy.isChecked()){count ++;}
 
         return count;
     }
