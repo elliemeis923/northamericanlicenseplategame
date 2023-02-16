@@ -54,16 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button settings = (Button) findViewById(R.id.settings);
 
-        settings.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
-            @Override
-            public void onClick(View view) {
-                Intent settingsIntent = new Intent(MainActivity.this, settingsActivity.class);
-                startActivity(settingsIntent);
-            }
-        });
 
 
     }

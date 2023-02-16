@@ -20,6 +20,14 @@
         android:textStyle="bold"
         />
 
+    <Button
+        android:id="@+id/reset_mexico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="#4CAF50"
+        android:onClick = "reset"/>
+
     <TextView
         android:id="@+id/percent_mexico"
         android:layout_width="match_parent"
@@ -64,7 +72,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countac"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageac"
                         android:gravity="center"
                         />
@@ -91,7 +99,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countbc"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagebc"
                         android:gravity="center"
                         />
@@ -118,7 +126,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countbcs"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagebcs"
                         android:gravity="center"
                         />
@@ -145,7 +153,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countcampeche"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagecampeche"
                         android:gravity="center"
                         />
@@ -172,7 +180,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countchiapas"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagechiapas"
                         android:gravity="center"
                         />
@@ -199,7 +207,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countchihuahua"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagechihuahua"
                         android:gravity="center"
                         />
@@ -226,7 +234,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countcoahuila"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagecoahuila"
                         android:gravity="center"
                         />
@@ -253,7 +261,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countcolima"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagecolima"
                         android:gravity="center"
                         />
@@ -280,7 +288,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countdurango"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagedurango"
                         android:gravity="center"
                         />
@@ -307,7 +315,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countguanajuato"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageguanajuato"
                         android:gravity="center"
                         />
@@ -334,7 +342,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countguerrero"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageguerrero"
                         android:gravity="center"
                         />
@@ -361,7 +369,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="counthidalgo"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagehidalgo"
                         android:gravity="center"
                         />
@@ -388,7 +396,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countjalisco"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagejalisco"
                         android:gravity="center"
                         />
@@ -415,7 +423,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countmexico"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagemexico"
                         android:gravity="center"
                         />
@@ -442,7 +450,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countmexicocity"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagemexicocity"
                         android:gravity="center"
                         />
@@ -469,7 +477,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countmichoacan"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagemichoacan"
                         android:gravity="center"
                         />
@@ -496,7 +504,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countmorelos"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagemorelos"
                         android:gravity="center"
                         />
@@ -523,7 +531,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countnayarit"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagenayarit"
                         android:gravity="center"
                         />
@@ -550,7 +558,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countnl"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagenl"
                         android:gravity="center"
                         />
@@ -577,7 +585,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countoaxaca"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageoaxaca"
                         android:gravity="center"
                         />
@@ -604,7 +612,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countpuebla"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagepuebla"
                         android:gravity="center"
                         />
@@ -631,7 +639,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countqueretaro"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagequeretaro"
                         android:gravity="center"
                         />
@@ -658,7 +666,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countqr"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageqr"
                         android:gravity="center"
                         />
@@ -685,7 +693,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countslp"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageslp"
                         android:gravity="center"
                         />
@@ -712,7 +720,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countsinaloa"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagesinaloa"
                         android:gravity="center"
                         />
@@ -739,7 +747,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countsonora"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagesonora"
                         android:gravity="center"
                         />
@@ -766,7 +774,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="counttabasco"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagetabasco"
                         android:gravity="center"
                         />
@@ -793,7 +801,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="counttamaulipas"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagetamaulipas"
                         android:gravity="center"
                         />
@@ -820,7 +828,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="counttlaxcala"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagetlaxcala"
                         android:gravity="center"
                         />
@@ -847,7 +855,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countvc"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagevc"
                         android:gravity="center"
                         />
@@ -874,7 +882,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countyucatan"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imageyucatan"
                         android:gravity="center"
                         />
@@ -901,7 +909,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countzacatas"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/imagezacatas"
                         android:gravity="center"
                         />

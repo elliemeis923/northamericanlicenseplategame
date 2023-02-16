@@ -17,28 +17,31 @@
         android:textSize="30sp"
         android:textColor="#FFFFFF"
         android:gravity="center"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset_canada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="#E8799F"
+        android:onClick = "reset"/>
 
     <TextView
         android:id="@+id/percent_canada"
         android:layout_width="match_parent"
-        android:layout_height="99dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="0/13"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"/>
 
-
-
-            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+            <ScrollView
             android:id="@+id/list"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".canadaActivity"
             android:background="#E8799F">
 
                 <LinearLayout
@@ -66,7 +69,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:onClick="countalberta"
+                        android:onClick="countPlates"
                         android:layout_toRightOf="@id/image"
                         android:gravity="center"
                         />
@@ -93,7 +96,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countbc"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagebc"
                             android:gravity="center"
                             />
@@ -120,7 +123,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countmanitoba"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagemanitoba"
                             android:gravity="center"
                             />
@@ -147,7 +150,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countnb"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagenb"
                             android:gravity="center"
                             />
@@ -174,7 +177,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countnfl"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagenfl"
 
                             />
@@ -201,7 +204,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countnt"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagent"
 
                             />
@@ -225,7 +228,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="88dp"
                             android:layout_toRightOf="@id/imagens"
-                            android:onClick="countns"
+                            android:onClick="countPlates"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
@@ -255,7 +258,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countnunavut"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagenunavut"
 
                             />
@@ -282,7 +285,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countontario"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imageontario"
 
                             />
@@ -309,7 +312,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countpei"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagepei"
 
                             />
@@ -336,7 +339,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countquebec"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagequebec"
 
                             />
@@ -363,7 +366,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countsaska"
+                            android:onClick="countPlates"
                             android:layout_toRightOf="@id/imagesaska"
 
                             />
@@ -390,26 +393,13 @@
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             android:textStyle="bold"
-                            android:onClick="countyukon"
-                            android:layout_toRightOf="@id/imageyukon"
-
-                            />
+                            android:onClick="countPlates"
+                            android:layout_toRightOf="@id/imageyukon" />
 
                     </RelativeLayout>
 
-
-
                 </LinearLayout>
 
-
-
             </ScrollView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="71dp"
-        android:text="reset" />
-
 
 </LinearLayout>

@@ -20,6 +20,14 @@
         android:textStyle="bold"
         />
 
+    <Button
+        android:id="@+id/reset_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="#03A9F4"
+        android:onClick = "reset"/>
+
     <TextView
         android:id="@+id/percent_us"
         android:layout_width="match_parent"
@@ -64,7 +72,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countalabama"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagealabama"
                     android:gravity="center"
                     />
@@ -91,7 +99,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countalaska"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagealaska"
                     android:gravity="center"
                     />
@@ -118,7 +126,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countarizona"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagearizona"
                     android:gravity="center"
                     />
@@ -145,7 +153,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countarkansas"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagearkansas"
                     android:gravity="center"
                     />
@@ -172,7 +180,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countcalifornia"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagecalifornia"
                     android:gravity="center"
                     />
@@ -199,7 +207,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countcolorado"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagecolorado"
                     android:gravity="center"
                     />
@@ -226,7 +234,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countconnecticut"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageconnecticut"
                     android:gravity="center"
                     />
@@ -253,7 +261,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countdelaware"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagedelaware"
                     android:gravity="center"
                     />
@@ -280,7 +288,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countflorida"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageflorida"
                     android:gravity="center"
                     />
@@ -307,7 +315,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countgeorgia"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagegeorgia"
                     android:gravity="center"
                     />
@@ -334,7 +342,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="counthawaii"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagehawaii"
                     android:gravity="center"
                     />
@@ -361,7 +369,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countidaho"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageidaho"
                     android:gravity="center"
                     />
@@ -388,7 +396,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countillinois"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageillinois"
                     android:gravity="center"
                     />
@@ -415,7 +423,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countindiana"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageindiana"
                     android:gravity="center"
                     />
@@ -442,7 +450,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countiowa"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageiowa"
                     android:gravity="center"
                     />
@@ -469,7 +477,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countkansas"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagekansas"
                     android:gravity="center"
                     />
@@ -496,7 +504,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countkentucky"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagekentucky"
                     android:gravity="center"
                     />
@@ -523,7 +531,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countlouisiana"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagelouisiana"
                     android:gravity="center"
                     />
@@ -550,7 +558,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmaine"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemaine"
                     android:gravity="center"
                     />
@@ -577,7 +585,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmaryland"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemaryland"
                     android:gravity="center"
                     />
@@ -604,7 +612,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmass"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemass"
                     android:gravity="center"
                     />
@@ -631,7 +639,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmichigan"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemichigan"
                     android:gravity="center"
                     />
@@ -658,7 +666,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countminnesota"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageminnesota"
                     android:gravity="center"
                     />
@@ -685,7 +693,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmississippi"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemississippi"
                     android:gravity="center"
                     />
@@ -712,7 +720,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmissouri"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemissouri"
                     android:gravity="center"
                     />
@@ -739,7 +747,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countmontana"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagemontana"
                     android:gravity="center"
                     />
@@ -766,7 +774,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnebraska"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagenebraska"
                     android:gravity="center"
                     />
@@ -793,7 +801,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnevada"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagenevada"
                     android:gravity="center"
                     />
@@ -820,7 +828,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnh"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagenh"
                     android:gravity="center"
                     />
@@ -847,7 +855,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnj"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagenj"
                     android:gravity="center"
                     />
@@ -874,7 +882,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnm"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagenm"
                     android:gravity="center"
                     />
@@ -901,7 +909,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countny"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageny"
                     android:gravity="center"
                     />
@@ -928,7 +936,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnc"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagenc"
                     android:gravity="center"
                     />
@@ -955,7 +963,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countnd"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagend"
                     android:gravity="center"
                     />
@@ -982,7 +990,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countohio"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageohio"
                     android:gravity="center"
                     />
@@ -1009,7 +1017,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countok"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageok"
                     android:gravity="center"
                     />
@@ -1036,7 +1044,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countor"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageor"
                     android:gravity="center"
                     />
@@ -1063,7 +1071,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countpenn"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagepenn"
                     android:gravity="center"
                     />
@@ -1090,7 +1098,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countri"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageri"
                     android:gravity="center"
                     />
@@ -1117,7 +1125,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countsc"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagesc"
                     android:gravity="center"
                     />
@@ -1144,7 +1152,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countsd"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagesd"
                     android:gravity="center"
                     />
@@ -1171,7 +1179,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="counttenn"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagetenn"
                     android:gravity="center"
                     />
@@ -1198,7 +1206,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="counttx"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagetx"
                     android:gravity="center"
                     />
@@ -1225,7 +1233,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countutah"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imageutah"
                     android:gravity="center"
                     />
@@ -1252,7 +1260,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countvermont"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagevermont"
                     android:gravity="center"
                     />
@@ -1279,7 +1287,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countvirginia"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagevirginia"
                     android:gravity="center"
                     />
@@ -1306,7 +1314,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countwash"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagewash"
                     android:gravity="center"
                     />
@@ -1333,7 +1341,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countwv"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagewv"
                     android:gravity="center"
                     />
@@ -1360,7 +1368,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countwis"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagewis"
                     android:gravity="center"
                     />
@@ -1387,7 +1395,7 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:onClick="countwy"
+                    android:onClick="countPlates"
                     android:layout_toRightOf="@id/imagewy"
                     android:gravity="center"
                     />
