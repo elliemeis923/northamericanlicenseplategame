@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class mexicoActivity extends AppCompatActivity {
 
-    public int countMexico;
-    int[] mexicoCheckIDs = {R.id.check_ac, R.id.check_bc, R.id.check_bcs, R.id.check_campeche, R.id.check_chipas, R.id.check_chihuahua, R.id.check_coahuila, R.id.check_colima,
+    private static int countMexico;
+    public static int getCount(){ return countMexico;}
+
+    static int[] mexicoCheckIDs = {R.id.check_ac, R.id.check_bc, R.id.check_bcs, R.id.check_campeche, R.id.check_chipas, R.id.check_chihuahua, R.id.check_coahuila, R.id.check_colima,
             R.id.check_durango, R.id.check_guanajuato, R.id.check_guerrero, R.id.check_hidalgo, R.id.check_jalisco,
             R.id.check_mexico, R.id.check_mexicocity, R.id.check_michoacan, R.id.check_morelos, R.id.check_nayarit, R.id.check_nl,
             R.id.check_oaxaca, R.id.check_puebla, R.id.check_queretaro, R.id.check_qr, R.id.check_slp, R.id.check_sinaloa, R.id.check_sonora,
@@ -32,6 +34,7 @@ public class mexicoActivity extends AppCompatActivity {
             a.setChecked(c1);
         }
 
+        countMexico = shm.getInt("cm", 0);
         countMexico = calculateCount();
         TextView tv =  findViewById(R.id.percent_mexico);
         tv.setText(countMexico + "/32");
@@ -43,9 +46,15 @@ public class mexicoActivity extends AppCompatActivity {
         for(int id : mexicoCheckIDs)
         {
             int index = getIndexFromID(id);
-            CheckBox a =  findViewById(mexicoCheckIDs[index]);
+            CheckBox a = findViewById(mexicoCheckIDs[index]);
             if(a.isChecked()){count ++;}
         }
+
+        /*SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+        SharedPreferences.Editor myEdit = sharedPreferences.edit();
+        myEdit.putInt("cm", count);
+        myEdit.apply();*/
+
         return count;
     }
 
@@ -60,7 +69,7 @@ public class mexicoActivity extends AppCompatActivity {
         }
     }
 
-    public int getIndexFromID(int id) {
+    public static int getIndexFromID(int id) {
         int index = 0;
         switch (id)
         {

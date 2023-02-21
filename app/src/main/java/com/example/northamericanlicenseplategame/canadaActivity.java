@@ -17,9 +17,10 @@ import java.util.ArrayList;
 
 public class canadaActivity extends AppCompatActivity {
 
-    public int countCanada;
+    private static int countCanada;
+    public static int getCount(){ return countCanada;}
 
-    int[] canadaCheckIDs = {R.id.check_alberta, R.id.check_bc, R.id.check_manitoba, R.id.check_nb, R.id.check_nfl, R.id.check_nt, R.id.check_ns, R.id.check_nunavut,
+    static int[] canadaCheckIDs = {R.id.check_alberta, R.id.check_bc, R.id.check_manitoba, R.id.check_nb, R.id.check_nfl, R.id.check_nt, R.id.check_ns, R.id.check_nunavut,
             R.id.check_ontario, R.id.check_pei, R.id.check_quebec, R.id.check_saska, R.id.check_yukon };
 
 
@@ -38,6 +39,7 @@ public class canadaActivity extends AppCompatActivity {
             a.setChecked(c1);
         }
 
+        countCanada = shc.getInt("cc", 0);
         countCanada = calculateCount();
         TextView tv =  findViewById(R.id.percent_canada);
         tv.setText(countCanada + "/13");
@@ -51,6 +53,12 @@ public class canadaActivity extends AppCompatActivity {
                 CheckBox a =  findViewById(canadaCheckIDs[index]);
                 if(a.isChecked()){count ++;}
             }
+
+            /*SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            myEdit.putInt("cc", count);
+            myEdit.apply();*/
+
             return count;
         }
 
@@ -65,7 +73,7 @@ public class canadaActivity extends AppCompatActivity {
             }
         }
 
-        public int getIndexFromID(int id) {
+        public static int getIndexFromID(int id) {
             int index = 0;
             switch (id)
             {

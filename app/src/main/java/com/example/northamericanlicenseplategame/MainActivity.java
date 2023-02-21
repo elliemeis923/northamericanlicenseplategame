@@ -13,13 +13,30 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public int countTotal = 0;
+    public int countTotal;
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        countTotal = usActivity.getCount() + mexicoActivity.getCount()  + canadaActivity.getCount();
+        TextView tv =  findViewById(R.id.percent_total);
+        tv.setText(countTotal + "/92");
+    }
+
+   /* public int loadCount(){
+        countTotal = usActivity.calculateCount() + mexicoActivity.calculateCount() + canadaActivity.calculateCount();
+        return countTotal;
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+       /* loadCount();*/
+        countTotal = usActivity.getCount() + mexicoActivity.getCount()  + canadaActivity.getCount();
+        TextView tv =  findViewById(R.id.percent_total);
+        tv.setText(countTotal + "/92");
 
         Button us = (Button) findViewById(R.id.us);
 

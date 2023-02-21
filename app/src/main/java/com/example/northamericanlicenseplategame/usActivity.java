@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class usActivity extends AppCompatActivity {
 
-    public int countUs;
-    int[] usCheckIDs = {R.id.check_alabama, R.id.check_alaska, R.id.check_arizona, R.id.check_arkansas, R.id.check_california, R.id.check_colorado, R.id.check_connecticut, R.id.check_delaware,
+    private static int countUs;
+    public static int getCount(){ return countUs;}
+
+   static int[] usCheckIDs = {R.id.check_alabama, R.id.check_alaska, R.id.check_arizona, R.id.check_arkansas, R.id.check_california, R.id.check_colorado, R.id.check_connecticut, R.id.check_delaware,
             R.id.check_florida, R.id.check_georgia, R.id.check_hawaii, R.id.check_idaho, R.id.check_illinois,
             R.id.check_indiana, R.id.check_iowa, R.id.check_kansas, R.id.check_kentucky, R.id.check_louisiana, R.id.check_maine,
             R.id.check_maryland, R.id.check_mass, R.id.check_michigan, R.id.check_minnesota, R.id.check_mississippi, R.id.check_missouri, R.id.check_montana,
@@ -34,12 +36,12 @@ public class usActivity extends AppCompatActivity {
             a.setChecked(c1);
         }
 
+        countUs = shu.getInt("cu", 0);
         countUs = calculateCount();
         TextView tv =  findViewById(R.id.percent_us);
-        tv.setText(countUs + "/32");
+        tv.setText(countUs + "/50");
 
     }
-
     public int calculateCount(){
         int count = 0;
         for(int id : usCheckIDs)
@@ -48,8 +50,15 @@ public class usActivity extends AppCompatActivity {
             CheckBox a =  findViewById(usCheckIDs[index]);
             if(a.isChecked()){count ++;}
         }
+
+        /*SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+        SharedPreferences.Editor myEdit = sharedPreferences.edit();
+        myEdit.putInt("cu", count);
+        myEdit.apply();*/
+
         return count;
     }
+
 
     public void reset(View view){
         countUs = 0;
@@ -62,7 +71,7 @@ public class usActivity extends AppCompatActivity {
         }
     }
 
-    public int getIndexFromID(int id) {
+    public static int getIndexFromID(int id) {
         int index = 0;
         switch (id)
         {
@@ -337,7 +346,7 @@ public class usActivity extends AppCompatActivity {
             countUs--;
         }
         TextView tv = (TextView) findViewById(R.id.percent_us);
-        tv.setText(countUs +"/32");
+        tv.setText(countUs +"/50");
         //save
         SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
