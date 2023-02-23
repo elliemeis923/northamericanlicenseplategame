@@ -17,7 +17,8 @@
         android:textSize="30sp"
         android:textColor="#FFFFFF"
         android:gravity="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/reset_canada"
@@ -25,7 +26,8 @@
         android:layout_height="wrap_content"
         android:text="Reset"
         android:backgroundTint="#E8799F"
-        android:onClick = "reset"/>
+        android:onClick = "reset"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/percent_canada"

@@ -1,5 +1,6 @@
 package com.example.northamericanlicenseplategame;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class usActivity extends AppCompatActivity {
             R.id.check_or, R.id.check_penn, R.id.check_ri, R.id.check_sc, R.id.check_sd, R.id.check_tenn, R.id.check_tx, R.id.check_utah, R.id.check_vermont, R.id.check_virginia, R.id.check_wash,
             R.id.check_wv, R.id.check_wis, R.id.check_wy };
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,15 +53,11 @@ public class usActivity extends AppCompatActivity {
             if(a.isChecked()){count ++;}
         }
 
-        /*SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-        SharedPreferences.Editor myEdit = sharedPreferences.edit();
-        myEdit.putInt("cu", count);
-        myEdit.apply();*/
-
         return count;
     }
 
 
+    @SuppressLint("SetTextI18n")
     public void reset(View view){
         countUs = 0;
         TextView tv = (TextView) findViewById(R.id.percent_us);
@@ -71,8 +69,8 @@ public class usActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     public static int getIndexFromID(int id) {
-        int index = 0;
         switch (id)
         {
             case R.id.check_alabama:
@@ -180,6 +178,7 @@ public class usActivity extends AppCompatActivity {
         }
 
         }
+    @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
     public void countPlates(View view){
 
         int index = getIndexFromID(view.getId());
@@ -345,12 +344,13 @@ public class usActivity extends AppCompatActivity {
         else{
             countUs--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent_us);
+        TextView tv = findViewById(R.id.percent_us);
         tv.setText(countUs +"/50");
         //save
         SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
         myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
+        myEdit.putInt("cu", countUs);
         myEdit.apply();
     }
 }

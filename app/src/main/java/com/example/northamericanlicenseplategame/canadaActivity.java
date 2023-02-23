@@ -1,19 +1,12 @@
 package com.example.northamericanlicenseplategame;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.ListView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.lang.reflect.Type;
-import java.util.ArrayList;
 
 public class canadaActivity extends AppCompatActivity {
 
@@ -24,6 +17,7 @@ public class canadaActivity extends AppCompatActivity {
             R.id.check_ontario, R.id.check_pei, R.id.check_quebec, R.id.check_saska, R.id.check_yukon };
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,27 +48,42 @@ public class canadaActivity extends AppCompatActivity {
                 if(a.isChecked()){count ++;}
             }
 
-            /*SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-            SharedPreferences.Editor myEdit = sharedPreferences.edit();
-            myEdit.putInt("cc", count);
-            myEdit.apply();*/
-
             return count;
         }
 
+        @SuppressLint("SetTextI18n")
         public void reset(View view){
+            SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
             countCanada = 0;
-            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            TextView tv = findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+            for(int id : canadaCheckIDs)
+            {
+                int index = getIndexFromID(id);
+                CheckBox cb =  findViewById(canadaCheckIDs[index]);
+                cb.setChecked(false);
+                myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
+            }
+            myEdit.putInt("cc", countCanada);
+            myEdit.apply();
+           /* SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+            SharedPreferences.Editor myEdit = sharedPreferences.edit();
+            countCanada = 0;
+            TextView tv = findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
             for(int id : canadaCheckIDs)
             {
                 CheckBox cb = findViewById(id);
                 cb.setChecked(false);
+                myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
             }
+            myEdit.putInt("cc", countCanada);
+            myEdit.apply();*/
         }
 
+        @SuppressLint("NonConstantResourceId")
         public static int getIndexFromID(int id) {
-            int index = 0;
             switch (id)
             {
                 case R.id.check_alberta:
@@ -109,6 +118,7 @@ public class canadaActivity extends AppCompatActivity {
 
         }
 
+        @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
         public void countPlates(View view){
 
             int index = getIndexFromID(view.getId());
@@ -163,12 +173,13 @@ public class canadaActivity extends AppCompatActivity {
             else{
                 countCanada--;
             }
-            TextView tv = (TextView) findViewById(R.id.percent_canada);
+            TextView tv = findViewById(R.id.percent_canada);
             tv.setText(countCanada +"/13");
             //save
             SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
             SharedPreferences.Editor myEdit = sharedPreferences.edit();
             myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
+            myEdit.putInt("cc", countCanada);
             myEdit.apply();
         }
 

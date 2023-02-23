@@ -527,7 +527,7 @@
                     android:id="@+id/check_louisiana"
                     android:layout_width="wrap_content"
                     android:layout_height="88dp"
-                    android:text="louisiana"
+                    android:text="Louisiana"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"

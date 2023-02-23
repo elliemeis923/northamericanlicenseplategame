@@ -1,5 +1,6 @@
 package com.example.northamericanlicenseplategame;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class mexicoActivity extends AppCompatActivity {
             R.id.check_oaxaca, R.id.check_puebla, R.id.check_queretaro, R.id.check_qr, R.id.check_slp, R.id.check_sinaloa, R.id.check_sonora,
             R.id.check_tabasco, R.id.check_tamaulipas, R.id.check_tlaxcala, R.id.check_vc,  R.id.check_yucatan, R.id.check_zacatas };
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,14 +52,10 @@ public class mexicoActivity extends AppCompatActivity {
             if(a.isChecked()){count ++;}
         }
 
-        /*SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-        SharedPreferences.Editor myEdit = sharedPreferences.edit();
-        myEdit.putInt("cm", count);
-        myEdit.apply();*/
-
         return count;
     }
 
+    @SuppressLint("SetTextI18n")
     public void reset(View view){
         countMexico = 0;
         TextView tv = (TextView) findViewById(R.id.percent_mexico);
@@ -69,8 +67,8 @@ public class mexicoActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     public static int getIndexFromID(int id) {
-        int index = 0;
         switch (id)
         {
             case R.id.check_ac:
@@ -143,6 +141,7 @@ public class mexicoActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
     public void countPlates(View view){
 
         int index = getIndexFromID(view.getId());
@@ -254,12 +253,13 @@ public class mexicoActivity extends AppCompatActivity {
         else{
             countMexico--;
         }
-        TextView tv = (TextView) findViewById(R.id.percent_mexico);
+        TextView tv = findViewById(R.id.percent_mexico);
         tv.setText(countMexico +"/32");
         //save
         SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
         SharedPreferences.Editor myEdit = sharedPreferences.edit();
         myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
+        myEdit.putInt("cm", countMexico);
         myEdit.apply();
     }
 }
