@@ -52,35 +52,23 @@ public class canadaActivity extends AppCompatActivity {
         }
 
         @SuppressLint("SetTextI18n")
-        public void reset(View view){
+        public void reset(View view) {
             SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
             SharedPreferences.Editor myEdit = sharedPreferences.edit();
             countCanada = 0;
-            TextView tv = findViewById(R.id.percent_canada);
-            tv.setText(countCanada +"/13");
             for(int id : canadaCheckIDs)
             {
-                int index = getIndexFromID(id);
-                CheckBox cb =  findViewById(canadaCheckIDs[index]);
+                CheckBox cb =  findViewById(id);
                 cb.setChecked(false);
-                myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
+                myEdit.putBoolean(Integer.toString(id), false);
             }
+            TextView tv = findViewById(R.id.percent_canada);
+            tv.setText(countCanada +"/13");
+            myEdit.putBoolean(Integer.toString(view.getId()), false);
             myEdit.putInt("cc", countCanada);
             myEdit.apply();
-           /* SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
-            SharedPreferences.Editor myEdit = sharedPreferences.edit();
-            countCanada = 0;
-            TextView tv = findViewById(R.id.percent_canada);
-            tv.setText(countCanada +"/13");
-            for(int id : canadaCheckIDs)
-            {
-                CheckBox cb = findViewById(id);
-                cb.setChecked(false);
-                myEdit.putBoolean(Integer.toString(view.getId()), cb.isChecked());
-            }
-            myEdit.putInt("cc", countCanada);
-            myEdit.apply();*/
         }
+
 
         @SuppressLint("NonConstantResourceId")
         public static int getIndexFromID(int id) {

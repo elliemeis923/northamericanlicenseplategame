@@ -59,14 +59,20 @@ public class usActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     public void reset(View view){
+        SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+        SharedPreferences.Editor myEdit = sharedPreferences.edit();
         countUs = 0;
-        TextView tv = (TextView) findViewById(R.id.percent_us);
-        tv.setText(countUs +"/32");
         for(int id : usCheckIDs)
         {
-            CheckBox cb = findViewById(id);
+            CheckBox cb =  findViewById(id);
             cb.setChecked(false);
+            myEdit.putBoolean(Integer.toString(id), false);
         }
+        TextView tv = findViewById(R.id.percent_us);
+        tv.setText(countUs +"/50");
+        myEdit.putBoolean(Integer.toString(view.getId()), false);
+        myEdit.putInt("cu", countUs);
+        myEdit.apply();
     }
 
     @SuppressLint("NonConstantResourceId")

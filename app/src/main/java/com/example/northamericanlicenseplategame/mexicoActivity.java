@@ -14,7 +14,7 @@ public class mexicoActivity extends AppCompatActivity {
     private static int countMexico;
     public static int getCount(){ return countMexico;}
 
-    static int[] mexicoCheckIDs = {R.id.check_ac, R.id.check_bc, R.id.check_bcs, R.id.check_campeche, R.id.check_chipas, R.id.check_chihuahua, R.id.check_coahuila, R.id.check_colima,
+    static int[] mexicoCheckIDs = {R.id.check_ac, R.id.check_bcm, R.id.check_bcs, R.id.check_campeche, R.id.check_chipas, R.id.check_chihuahua, R.id.check_coahuila, R.id.check_colima,
             R.id.check_durango, R.id.check_guanajuato, R.id.check_guerrero, R.id.check_hidalgo, R.id.check_jalisco,
             R.id.check_mexico, R.id.check_mexicocity, R.id.check_michoacan, R.id.check_morelos, R.id.check_nayarit, R.id.check_nl,
             R.id.check_oaxaca, R.id.check_puebla, R.id.check_queretaro, R.id.check_qr, R.id.check_slp, R.id.check_sinaloa, R.id.check_sonora,
@@ -57,14 +57,20 @@ public class mexicoActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     public void reset(View view){
+        SharedPreferences sharedPreferences = getSharedPreferences("sharedpreferences", MODE_PRIVATE);
+        SharedPreferences.Editor myEdit = sharedPreferences.edit();
         countMexico = 0;
-        TextView tv = (TextView) findViewById(R.id.percent_mexico);
-        tv.setText(countMexico +"/32");
         for(int id : mexicoCheckIDs)
         {
-            CheckBox cb = findViewById(id);
+            CheckBox cb =  findViewById(id);
             cb.setChecked(false);
+            myEdit.putBoolean(Integer.toString(id), false);
         }
+        TextView tv = findViewById(R.id.percent_mexico);
+        tv.setText(countMexico +"/32");
+        myEdit.putBoolean(Integer.toString(view.getId()), false);
+        myEdit.putInt("cm", countMexico);
+        myEdit.apply();
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -73,7 +79,7 @@ public class mexicoActivity extends AppCompatActivity {
         {
             case R.id.check_ac:
                 return 0;
-            case R.id.check_bc:
+            case R.id.check_bcm:
                 return 1;
             case R.id.check_bcs:
                 return 2;
@@ -150,7 +156,7 @@ public class mexicoActivity extends AppCompatActivity {
             case R.id.check_ac:
                 index = 0;
                 break;
-            case R.id.check_bc:
+            case R.id.check_bcm:
                 index = 1;
                 break;
             case R.id.check_bcs:

@@ -92,7 +92,7 @@
                         android:background="#4CAF50"/>
 
                     <CheckBox
-                        android:id="@+id/check_bc"
+                        android:id="@+id/check_bcm"
                         android:layout_width="wrap_content"
                         android:layout_height="88dp"
                         android:text="Baja California"
