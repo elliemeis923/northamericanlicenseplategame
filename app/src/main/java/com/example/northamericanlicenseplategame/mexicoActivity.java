@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class mexicoActivity extends AppCompatActivity {
 
     private static int countMexico;
-    public static int getCount(){ return countMexico;}
 
     static int[] mexicoCheckIDs = {R.id.check_ac, R.id.check_bcm, R.id.check_bcs, R.id.check_campeche, R.id.check_chipas, R.id.check_chihuahua, R.id.check_coahuila, R.id.check_colima,
             R.id.check_durango, R.id.check_guanajuato, R.id.check_guerrero, R.id.check_hidalgo, R.id.check_jalisco,

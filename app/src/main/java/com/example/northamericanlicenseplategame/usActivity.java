@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class usActivity extends AppCompatActivity {
 
     private static int countUs;
-    public static int getCount(){ return countUs;}
 
    static int[] usCheckIDs = {R.id.check_alabama, R.id.check_alaska, R.id.check_arizona, R.id.check_arkansas, R.id.check_california, R.id.check_colorado, R.id.check_connecticut, R.id.check_delaware,
             R.id.check_florida, R.id.check_georgia, R.id.check_hawaii, R.id.check_idaho, R.id.check_illinois,

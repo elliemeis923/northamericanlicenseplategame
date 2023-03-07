@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class canadaActivity extends AppCompatActivity {
 
     private static int countCanada;
-    public static int getCount(){ return countCanada;}
 
     static int[] canadaCheckIDs = {R.id.check_alberta, R.id.check_bc, R.id.check_manitoba, R.id.check_nb, R.id.check_nfl, R.id.check_nt, R.id.check_ns, R.id.check_nunavut,
             R.id.check_ontario, R.id.check_pei, R.id.check_quebec, R.id.check_saska, R.id.check_yukon };

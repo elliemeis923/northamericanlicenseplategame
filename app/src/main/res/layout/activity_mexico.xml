@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_gravity="center"
-    android:background="#5E7876">
+    android:background="#685A42">
 
     <TextView
         android:id="@+id/title_mexico"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="#61A564"
         android:onClick = "reset"/>
 
     <TextView
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".mexicoActivity"
-            android:background="#4CAF50">
+            android:background="#61A564">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1295"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_ac"
@@ -89,7 +89,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1296"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_bcm"
@@ -116,7 +116,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1297"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_bcs"
@@ -143,7 +143,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1298"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_campeche"
@@ -170,7 +170,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1299"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_chipas"
@@ -197,7 +197,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1300"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_chihuahua"
@@ -224,7 +224,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1301"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_coahuila"
@@ -251,7 +251,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1302"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_colima"
@@ -278,7 +278,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1304"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_durango"
@@ -305,7 +305,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1306"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_guanajuato"
@@ -332,7 +332,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1307"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_guerrero"
@@ -359,7 +359,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1308"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_hidalgo"
@@ -386,7 +386,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1309"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_jalisco"
@@ -413,7 +413,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1310"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_mexico"
@@ -440,7 +440,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1303"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_mexicocity"
@@ -467,7 +467,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1311"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_michoacan"
@@ -494,7 +494,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1312"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_morelos"
@@ -521,7 +521,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1313"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_nayarit"
@@ -548,7 +548,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1314"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_nl"
@@ -575,7 +575,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1315"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_oaxaca"
@@ -602,7 +602,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1316"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_puebla"
@@ -629,7 +629,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1317"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_queretaro"
@@ -656,7 +656,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1318"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_qr"
@@ -683,7 +683,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1319"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_slp"
@@ -710,7 +710,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1320"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_sinaloa"
@@ -737,7 +737,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1321"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_sonora"
@@ -764,7 +764,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1322"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_tabasco"
@@ -791,7 +791,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1323"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_tamaulipas"
@@ -818,7 +818,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1324"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_tlaxcala"
@@ -845,7 +845,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1325"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_vc"
@@ -872,7 +872,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1326"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_yucatan"
@@ -899,7 +899,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/img_1327"
-                        android:background="#4CAF50"/>
+                        android:background="#61A564"/>
 
                     <CheckBox
                         android:id="@+id/check_zacatas"

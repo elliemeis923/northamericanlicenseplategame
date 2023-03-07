@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_gravity="center"
-    android:background="#5E7876">
+    android:background="#685A42">
 
     <TextView
         android:id="@+id/title_us"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset"
-        android:backgroundTint="#03A9F4"
+        android:backgroundTint="#3F51B5"
         android:onClick = "reset"/>
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".usActivity"
-        android:background="#03A9F4">
+        android:background="#3F51B5">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/alabama_license"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_alabama"
@@ -89,7 +89,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/alaska_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_alaska"
@@ -116,7 +116,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/arizona_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_arizona"
@@ -143,7 +143,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/arkansas_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_arkansas"
@@ -170,7 +170,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/california_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_california"
@@ -197,7 +197,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/colorado_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_colorado"
@@ -224,7 +224,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/connecticut_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_connecticut"
@@ -251,7 +251,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/delaware_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_delaware"
@@ -278,7 +278,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/florida_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_florida"
@@ -305,7 +305,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/georgia_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_georgia"
@@ -332,7 +332,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/hawaii_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_hawaii"
@@ -359,7 +359,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/idaho_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_idaho"
@@ -386,7 +386,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/illinois_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_illinois"
@@ -413,7 +413,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/indiana_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_indiana"
@@ -440,7 +440,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/iowa_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_iowa"
@@ -467,7 +467,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/kansas_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_kansas"
@@ -494,7 +494,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/kentucky_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_kentucky"
@@ -521,7 +521,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/louisiana_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_louisiana"
@@ -548,7 +548,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/maine_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_maine"
@@ -575,7 +575,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/maryland_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_maryland"
@@ -602,7 +602,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/massachusetts_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_mass"
@@ -629,7 +629,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/michigan_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_michigan"
@@ -656,7 +656,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/minnesota_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_minnesota"
@@ -683,7 +683,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/mississippi_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_mississippi"
@@ -710,7 +710,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/missouri_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_missouri"
@@ -737,7 +737,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/montana_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_montana"
@@ -764,7 +764,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/nebraska_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nebraska"
@@ -791,7 +791,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/nevada_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nevada"
@@ -818,7 +818,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/newhampshire_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nh"
@@ -845,7 +845,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/newjersey_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nj"
@@ -872,7 +872,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/newmexico_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nm"
@@ -899,7 +899,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/newyork_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_ny"
@@ -926,7 +926,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/northcarolina_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nc"
@@ -953,7 +953,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/northdakota_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_nd"
@@ -980,7 +980,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/ohio_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_ohio"
@@ -1007,7 +1007,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/oklahoma_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_ok"
@@ -1034,7 +1034,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/oregon_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_or"
@@ -1061,7 +1061,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/pennsylvania_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_penn"
@@ -1088,7 +1088,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/rhodeisland_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_ri"
@@ -1115,7 +1115,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/southcarolina_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_sc"
@@ -1142,7 +1142,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/southdakota_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_sd"
@@ -1169,7 +1169,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/tennessee_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_tenn"
@@ -1196,7 +1196,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/texas_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_tx"
@@ -1223,7 +1223,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/utah_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_utah"
@@ -1250,7 +1250,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/vermont_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_vermont"
@@ -1277,7 +1277,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/virginia_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_virginia"
@@ -1304,7 +1304,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/washington_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_wash"
@@ -1331,7 +1331,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/westvirginia_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_wv"
@@ -1358,7 +1358,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/wisconsin_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_wis"
@@ -1385,7 +1385,7 @@
                     android:layout_width="88dp"
                     android:layout_height="88dp"
                     android:src="@drawable/wyoming_license_thumb"
-                    android:background="#03A9F4"/>
+                    android:background="#3F51B5"/>
 
                 <CheckBox
                     android:id="@+id/check_wy"

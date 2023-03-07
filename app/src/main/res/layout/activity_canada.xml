@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_gravity="center"
-    android:background="#5E7876">
+    android:background="#685A42">
 
     <TextView
         android:id="@+id/title_canada"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset"
-        android:backgroundTint="#E8799F"
+        android:backgroundTint="#B33750"
         android:onClick = "reset"
         tools:ignore="HardcodedText" />
 
@@ -44,7 +44,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E8799F">
+            android:background="#B33750">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
                         android:layout_width="88dp"
                         android:layout_height="88dp"
                         android:src="@drawable/alberta"
-                        android:background="#E8799F"/>
+                        android:background="#B33750"/>
 
                     <CheckBox
                         android:id="@+id/check_alberta"
@@ -88,7 +88,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/british_columbia"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_bc"
@@ -115,7 +115,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/manitoba"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_manitoba"
@@ -142,7 +142,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/new_brunswick"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_nb"
@@ -169,7 +169,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/nfl"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_nfl"
@@ -196,7 +196,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/nt"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_nt"
@@ -223,7 +223,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/nova_scotia"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_ns"
@@ -250,7 +250,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/nunavut"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_nunavut"
@@ -277,7 +277,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/ontario"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_ontario"
@@ -304,7 +304,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/pei"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_pei"
@@ -331,7 +331,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/quebec"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_quebec"
@@ -358,7 +358,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/saskatchewan"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_saska"
@@ -385,7 +385,7 @@
                             android:layout_width="88dp"
                             android:layout_height="88dp"
                             android:src="@drawable/yukon"
-                            android:background="#E8799F"/>
+                            android:background="#B33750"/>
 
                         <CheckBox
                             android:id="@+id/check_yukon"
